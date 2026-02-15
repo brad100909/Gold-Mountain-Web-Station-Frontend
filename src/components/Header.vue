@@ -12,6 +12,8 @@
         <a href="#portfolio" class="text-gray-700 hover:text-green-700 font-medium transition">作品</a>
         <a href="#services" class="text-gray-700 hover:text-green-700 font-medium transition">服務</a>
         <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">聯絡我</a>
+        <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">方案介紹</a>
+        
       </nav>
 
       <!-- Mobile Hamburger -->
@@ -35,6 +37,7 @@
         <a href="#portfolio" class="text-gray-700 hover:text-green-700 font-medium transition">作品</a>
         <a href="#services" class="text-gray-700 hover:text-green-700 font-medium transition">服務</a>
         <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">聯絡我</a>
+        <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">方案介紹</a>
       </nav>
     </div>
   </header>

@@ -77,7 +77,7 @@ const slides = [
   {
     img: img3,
     title: '付費方案',
-    desc: 'Linux 主機部署、SSL、效能調校、備份與維運',
+    desc: '訂閱制、一次性專案，彈性選擇適合你的方案',
     link: '/pricing',
     linkText: '方案詳情',
   },

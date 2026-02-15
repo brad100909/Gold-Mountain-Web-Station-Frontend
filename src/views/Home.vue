@@ -34,7 +34,7 @@
     class="observe-item opacity-0 text-gray-100 text-lg md:text-xl mb-10 max-w-3xl mx-auto leading-relaxed tracking-wide animate-fade-in-up animate-fade-in-up-500"
     >
     金山網頁設計｜<span class="font-semibold">Vue + Laravel 全端客製化開發</span><br />
-    RWD 響應式網站・形象網站・系統開發・部署與長期維護・<span class="font-semibold">金流與電商整合（Shopify、ECPay、客製化網站 等）</span>
+    RWD 響應式網站・形象網站・系統開發・部署與長期維護・<span class="font-semibold">金流與電商整合（Shopify、WordPress、客製化網站 等）</span>
     </p>
 
     <div class="flex justify-center gap-4">
