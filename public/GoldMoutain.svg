@@ -1,0 +1,40 @@
+<svg
+  width="260"
+  height="48"
+  viewBox="0 0 260 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Mountain Icon -->
+  <path
+    d="M8 40L24 12L40 40H32L24 26L16 40H8Z"
+    fill="url(#goldGradient)"
+  />
+
+  <!-- Brand Text -->
+  <text
+    x="56"
+    y="32"
+    font-size="24"
+    font-weight="700"
+    letter-spacing="0.5"
+    fill="url(#goldGradient)"
+    font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont"
+  >
+    Gold Mountain
+  </text>
+
+  <defs>
+    <linearGradient
+      id="goldGradient"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
+      <stop offset="0%" stop-color="#BFA76A" />
+      <stop offset="50%" stop-color="#E3D3A3" />
+      <stop offset="100%" stop-color="#A58A4A" />
+    </linearGradient>
+  </defs>
+</svg>
