@@ -26,9 +26,21 @@
           <h3 class="title">
             {{ slide.title }}
           </h3>
+
           <p class="desc">
             {{ slide.desc }}
           </p>
+
+          <!-- ✅ CTA：只有有 link 才顯示 -->
+          <RouterLink
+            v-if="slide.link"
+            :to="slide.link"
+            class="plan-cta"
+          >
+            {{ slide.linkText }}
+            <img :src="linkpic" alt="linkicon" class="arrow-icon" />
+          </RouterLink>
+
         </div>
 
       </div>
@@ -40,6 +52,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import { RouterLink } from 'vue-router'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -48,12 +61,13 @@ import 'swiper/css/pagination'
 import img1 from '/sample1.jpg'
 import img2 from '/sample3.jpg'
 import img3 from '/sample5.jpg'
+import linkpic from '/linkpic.png'
 
 const slides = [
   {
     img: img1,
     title: '客製化品牌網站',
-    desc: '以 Vue + Laravel 打造高效能、可長期維護的形象網站、Linux 主機部署、SSL、效能調校、備份與維運>',
+    desc: '以 Vue + Laravel 打造高效能、可長期維護的形象網站',
   },
   {
     img: img2,
@@ -64,11 +78,12 @@ const slides = [
     img: img3,
     title: '付費方案',
     desc: 'Linux 主機部署、SSL、效能調校、備份與維運',
-    link: '/pricing',        // 👈 方案詳情頁 route
-    linkText: '方案詳情',    // 👈 按鈕文字
+    link: '/pricing',
+    linkText: '方案詳情',
   },
 ]
 </script>
+
 
 
 <style scoped>
@@ -102,12 +117,11 @@ const slides = [
   transition: transform 6s ease;
 }
 
-/* 當前 slide 圖片微放大 */
 .swiper-slide-active .slide-img {
   transform: scale(1.12);
 }
 
-/* 遮罩（高級感重點） */
+/* 遮罩 */
 .overlay {
   position: absolute;
   inset: 0;
@@ -133,7 +147,7 @@ const slides = [
   color: #fff;
 }
 
-/* 標題動畫初始狀態 */
+/* 標題 */
 .title {
   font-size: 28px;
   font-weight: 600;
@@ -143,7 +157,7 @@ const slides = [
   transition: all 0.8s ease;
 }
 
-/* 描述文字 */
+/* 描述 */
 .desc {
   font-size: 15px;
   line-height: 1.7;
@@ -155,12 +169,62 @@ const slides = [
   transition: all 0.8s ease 0.15s;
 }
 
-/* 進場動畫（只有 active 才顯示） */
+/* CTA（右下角） */
+.plan-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;       /* 文字與箭頭距離 */
+  padding: 6px 12px;  /* 控制整個按鈕大小 */
+  font-size: 14px;
+  position: absolute;
+  right: 28px;
+  bottom: 24px;
+  z-index: 3;
+
+  border-radius: 999px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.35s ease;
+}
+
+
+
+.arrow-icon {
+  width: 16px;  /* 根據你的箭頭圖片大小調整 */
+  height: 16px;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.plan-cta:hover {
+  background: #fff;
+  color: #000;
+}
+
+.plan-cta:hover .arrow-icon {
+  transform: translateX(4px); /* 滑動效果 */
+}
+
+
+/* Hover 效果 */
+.plan-cta:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+
+.plan-cta:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+
+/* 進場動畫 */
 .swiper-slide-active .title,
 .swiper-slide-active .desc {
   opacity: 1;
   transform: translateY(0);
 }
-
-
 </style>
