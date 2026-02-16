@@ -68,6 +68,8 @@ const slides = [
     img: img1,
     title: '客製化品牌網站',
     desc: '以 Vue + Laravel 打造高效能、可長期維護的形象網站',
+    link: '/pricing',
+    linkText: '作品集',
   },
   {
     img: img2,
