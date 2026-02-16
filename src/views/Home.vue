@@ -48,53 +48,57 @@
     </section>
 
     <!-- Services -->
-    <section class="py-20 px-6 bg-gradient-to-b from-gray-100 to-gray-50">
-      <h2 class="text-2xl font-semibold text-center mb-12 text-gray-900">
-        服務提供
+  <section class="py-20 px-6 bg-transparent">
+    <h2 class="text-2xl font-semibold text-center mb-12 text-gray-100">
+      服務提供
+    </h2>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <div class="bg-white/80 p-8 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-2xl cursor-pointer hover:ring-1 hover:ring-green-400">
+        <h3 class="font-semibold text-lg mb-3 text-gray-900 tracking-wide">客製化形象網站</h3>
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+          企業形象網站、個人品牌頁、服務介紹頁，專注速度、SEO 與轉換率，提升 Google 排名。
+        </p>
+      </div>
+      <div class="bg-white/80 p-8 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-2xl cursor-pointer hover:ring-1 hover:ring-green-400">
+        <h3 class="font-semibold text-lg mb-3 text-gray-900 tracking-wide">系統 / 會員功能開發</h3>
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+          會員登入、後台管理、訂單系統、API 串接，Vue + Laravel 架構，穩定且可擴充。
+        </p>
+      </div>
+      <div class="bg-white/80 p-8 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-2xl cursor-pointer hover:ring-1 hover:ring-green-400">
+        <h3 class="font-semibold text-lg mb-3 text-gray-900 tracking-wide">VPS 架設與維護</h3>
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+          Linux 主機部署、SSL、效能調校、備份與維運，網站上線後不失聯，可長期配合。
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Why Me -->
+  <section class="py-9 px-3 bg-transparent">
+    <div class="max-w-4xl mx-auto bg-white/80 p-6 rounded-lg shadow-md">
+      <h2 class="text-xl md:text-2xl font-semibold text-center tracking-wide mb-8 text-gray-900">
+        優勢與特色
       </h2>
-
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-        <div class=" p-8 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-2xl cursor-pointer hover:ring-1 hover:ring-green-400">
-          <h3 class="font-semibold text-lg mb-3 text-gray-900 tracking-wide">客製化形象網站</h3>
-          <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-            企業形象網站、個人品牌頁、服務介紹頁，專注速度、SEO 與轉換率，提升 Google 排名。
-          </p>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-2xl cursor-pointer hover:ring-1 hover:ring-green-400">
-          <h3 class="font-semibold text-lg mb-3 text-gray-900 tracking-wide">系統 / 會員功能開發</h3>
-          <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-            會員登入、後台管理、訂單系統、API 串接，Vue + Laravel 架構，穩定且可擴充。
-          </p>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-2xl cursor-pointer hover:ring-1 hover:ring-green-400">
-          <h3 class="font-semibold text-lg mb-3 text-gray-900 tracking-wide">VPS 架設與維護</h3>
-          <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-            Linux 主機部署、SSL、效能調校、備份與維運，網站上線後不失聯，可長期配合。
-          </p>
-        </div>
+      <div class="space-y-3 text-gray-700 text-sm md:text-base leading-snug">
+        <p>
+          不只是交付「畫面」，而是從需求分析、網站結構、效能表現到後續維護，全程站在實際營運角度思考，提供優質且實惠的解決方案。
+        </p>
+        <p>
+          相比套版快速交付，更重視網站是否能長期使用、是否好維護、是否真正幫助你帶來客戶，並提供穩定可靠的 7×24 技術支援。
+        </p>
+        <p>
+          技術選型以 Vue + Laravel 為核心，兼顧開發效率與系統穩定性，特別適合中小企業與個人品牌持續成長。
+        </p>
+        <p class="pt-3 text-center">
+          <a href="#hero" class="font-medium text-green-700 hover:text-green-800 transition">
+            立即聯絡我，一起打造專屬於你的高品質網站。
+          </a>
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Why Me -->
-    <section class="py-9 px-3 bg-white">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-xl md:text-2xl font-semibold text-center tracking-wide mb-8">優勢與特色</h2>
-        <div class="space-y-3 text-gray-700 text-sm md:text-base leading-snug">
-          <p>
-            不只是交付「畫面」，而是從需求分析、網站結構、效能表現到後續維護，全程站在實際營運角度思考，提供優質且實惠的解決方案。
-          </p>
-          <p>
-            相比套版快速交付，更重視網站是否能長期使用、是否好維護、是否真正幫助你帶來客戶，並提供穩定可靠的 7×24 技術支援。
-          </p>
-          <p>
-            技術選型以 Vue + Laravel 為核心，兼顧開發效率與系統穩定性，特別適合中小企業與個人品牌持續成長。
-          </p>
-          <p class="pt-3 text-center">
-            <a href="#hero" class="font-medium text-green-700 hover:text-green-800 transition">立即聯絡我，一起打造專屬於你的高品質網站。</a>
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- Contact -->
     <section id="contact" class="py-24 px-6 text-center bg-gray-900 text-gray-100">

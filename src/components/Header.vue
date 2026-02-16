@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="flex items-center">
         <img src="/Logo.svg" alt="Gold Mountain Logo" class="h-10 w-auto mr-3" />
-        <span class="text-xl font-bold text-gray-800">Gold Mountain 網頁設計</span>
+        <span class="text-xl font-bold text-gray-800">Golden Mountain 網頁設計</span>
       </div>
 
       <!-- Desktop Nav -->
