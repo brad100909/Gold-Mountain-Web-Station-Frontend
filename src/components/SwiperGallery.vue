@@ -53,6 +53,7 @@
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import { RouterLink } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -62,6 +63,8 @@ import img1 from '/sample1.jpg'
 import img2 from '/sample3.jpg'
 import img3 from '/sample5.jpg'
 import linkpic from '/linkpic.png'
+
+const { t } = useI18n()
 
 const slides = [
   {

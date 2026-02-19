@@ -1,48 +1,63 @@
 {
+  "video": {
+    "notSupported": "Your browser does not support video playback."
+  },
+
   "hero": {
-    "title": "Custom Websites & Systems\nBuilt for Long-Term Growth",
-    "subtitle": "I don’t sell templates.\nI build maintainable, scalable systems that actually work in real business.\nVue + Laravel full-stack architecture for sustainable growth",
-    "ctaPortfolio": "View Projects",
-    "ctaContact": "Free Consultation"
+    "titleLine1": "Custom Websites & System Development",
+    "titleLine2": "Built for Brands That Need Long-Term Growth",
+    "descLine1": "I don’t sell templates — I build",
+    "descStrong": "maintainable, scalable, production-ready websites and systems",
+    "descLine3": "Vue + Laravel Full-Stack Architecture｜Designed for long-term operation and expansion",
+    "ctaPortfolio": "View Portfolio",
+    "ctaContact": "Free Project Consultation"
   },
 
   "portfolio": {
     "title": "Project & System Interface Showcase",
-    "description": "Below are examples of real-world project types and system interface concepts,\nincluding corporate websites, admin dashboards, and membership systems.\nInteractive demos can be provided based on your needs."
+    "line1": "Below are examples of real-world projects and system interface concepts I’ve developed,",
+    "line2": "including corporate websites, admin dashboards, and membership workflows.",
+    "line3": "Interactive demo systems can be provided based on your specific requirements."
   },
 
   "services": {
     "title": "Services",
-    "items": {
-      "web": {
-        "title": "Custom Brand Websites",
-        "desc": "No templates. Designed based on your brand positioning and real requirements.\nFocused on performance, SEO, and user experience to generate real inquiries.",
-        "note": "Best for clients who don’t want to rebuild their site in 3 months"
-      },
-      "system": {
-        "title": "System & Membership Development",
-        "desc": "Membership systems, admin dashboards, order flows, and API integrations.\nDesigned from day one to be maintainable and scalable.",
-        "note": "Best for growing businesses that need data and process automation"
-      },
-      "vps": {
-        "title": "VPS Setup & Long-Term Maintenance",
-        "desc": "Server deployment, SSL, performance tuning, backups, and ongoing maintenance.\nI stay responsible after launch.",
-        "note": "Best for clients seeking a long-term technical partner"
-      }
+
+    "service1": {
+      "title": "Custom Brand Websites",
+      "line1": "No templates. Every website is designed around your brand positioning and real needs.",
+      "line2": "Focused on performance, SEO, and user experience to generate real inquiries and conversions.",
+      "note": "Best for: Clients who don’t want to rebuild their website again in three months"
+    },
+
+    "service2": {
+      "title": "System & Membership Development",
+      "line1": "Membership systems, admin panels, order flows, and API integrations.",
+      "line2": "Designed from day one with maintainability and scalability in mind.",
+      "note": "Best for: Growing businesses that need data management and workflow automation"
+    },
+
+    "service3": {
+      "title": "VPS Setup & Long-Term Maintenance",
+      "line1": "Server deployment, SSL, performance tuning, backups, and ongoing maintenance.",
+      "line2": "I stay responsible even after your site goes live.",
+      "note": "Best for: Clients looking for a long-term technical partner"
     }
   },
 
-  "why": {
+  "whyMe": {
     "title": "Why Work With Me?",
-    "p1": "Most websites fail not because of design, but because they can’t scale, aren’t maintained, and become costly over time.",
-    "p2": "I design systems with a simple question in mind: will this still work three years from now?",
-    "p3": "If you want the cheapest and fastest template, I’m probably not the right fit.\nBut if you want a technical partner who grows with your business, I am.",
-    "cta": "Let’s talk about your project"
+    "p1Prefix": "Most websites fail not because they look bad, but because they are",
+    "p1Strong": "impossible to extend, poorly maintained, and expensive to fix later",
+    "p2": "I design websites and systems with a simple question in mind: will this still work well three years from now?",
+    "p3Line1": "If you’re only looking for the fastest and cheapest template, I may not be the right choice.",
+    "p3Line2": "But if you want a technical partner who grows with your business, I’m someone you can rely on.",
+    "cta": "Contact me to discuss your project"
   },
 
   "contact": {
     "title": "Have a Project in Mind?",
-    "desc": "Tell me your idea briefly, and I’ll provide practical, actionable advice.",
-    "cta": "Free Consultation"
+    "description": "Briefly describe your idea. I’ll evaluate it and provide practical, actionable suggestions.",
+    "cta": "Free Project Consultation"
   }
 }
