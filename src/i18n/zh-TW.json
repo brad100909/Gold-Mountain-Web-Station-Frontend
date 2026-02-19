@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "首頁",
+    "services": "服務",
+    "contact": "聯絡我"
+  },
+  "hero": {
+    "title": "打造專屬於你的高品質網站",
+    "subtitle": "Vue + Laravel，速度、SEO、穩定度兼顧"
+  }
+}

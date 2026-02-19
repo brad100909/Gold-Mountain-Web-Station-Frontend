@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Build a High-Quality Website Tailored for You",
+    "subtitle": "Vue + Laravel with performance, SEO, and scalability"
+  }
+}
