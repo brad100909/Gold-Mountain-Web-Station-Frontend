@@ -1,11 +1,48 @@
 {
-  "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact"
-  },
   "hero": {
-    "title": "Build a High-Quality Website Tailored for You",
-    "subtitle": "Vue + Laravel with performance, SEO, and scalability"
+    "title": "Custom Websites & Systems\nBuilt for Long-Term Growth",
+    "subtitle": "I don’t sell templates.\nI build maintainable, scalable systems that actually work in real business.\nVue + Laravel full-stack architecture for sustainable growth",
+    "ctaPortfolio": "View Projects",
+    "ctaContact": "Free Consultation"
+  },
+
+  "portfolio": {
+    "title": "Project & System Interface Showcase",
+    "description": "Below are examples of real-world project types and system interface concepts,\nincluding corporate websites, admin dashboards, and membership systems.\nInteractive demos can be provided based on your needs."
+  },
+
+  "services": {
+    "title": "Services",
+    "items": {
+      "web": {
+        "title": "Custom Brand Websites",
+        "desc": "No templates. Designed based on your brand positioning and real requirements.\nFocused on performance, SEO, and user experience to generate real inquiries.",
+        "note": "Best for clients who don’t want to rebuild their site in 3 months"
+      },
+      "system": {
+        "title": "System & Membership Development",
+        "desc": "Membership systems, admin dashboards, order flows, and API integrations.\nDesigned from day one to be maintainable and scalable.",
+        "note": "Best for growing businesses that need data and process automation"
+      },
+      "vps": {
+        "title": "VPS Setup & Long-Term Maintenance",
+        "desc": "Server deployment, SSL, performance tuning, backups, and ongoing maintenance.\nI stay responsible after launch.",
+        "note": "Best for clients seeking a long-term technical partner"
+      }
+    }
+  },
+
+  "why": {
+    "title": "Why Work With Me?",
+    "p1": "Most websites fail not because of design, but because they can’t scale, aren’t maintained, and become costly over time.",
+    "p2": "I design systems with a simple question in mind: will this still work three years from now?",
+    "p3": "If you want the cheapest and fastest template, I’m probably not the right fit.\nBut if you want a technical partner who grows with your business, I am.",
+    "cta": "Let’s talk about your project"
+  },
+
+  "contact": {
+    "title": "Have a Project in Mind?",
+    "desc": "Tell me your idea briefly, and I’ll provide practical, actionable advice.",
+    "cta": "Free Consultation"
   }
 }
