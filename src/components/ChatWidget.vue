@@ -164,7 +164,9 @@ const errorMsg = ref('')
 const messageContainer = ref(null)
 const textareaRef = ref(null)
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+// In production, VITE_API_URL is set to '' (empty) so calls go to same origin
+// and Nginx proxies /api/ to the backend. In dev, falls back to localhost:3001.
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:3001'
 
 function toggleChat() {
   isOpen.value = !isOpen.value
