@@ -59,5 +59,23 @@
     "title": "Have a Project in Mind?",
     "description": "Briefly describe your idea. I’ll evaluate it and provide practical, actionable suggestions.",
     "cta": "Free Project Consultation"
+  },
+
+  "swiper": {
+    "img1": {
+      "title": "Custom Brand Websites",
+      "des": "High-performance, long-term maintainable brand websites built with Vue + Laravel",
+      "linkText": "Portfolio"
+    },
+    "img2": {
+      "title": "System & Admin Development",
+      "des": "Membership systems, order workflows, and payment integrations — a complete full-stack solution"
+    },
+    "img3": {
+      "title": "Pricing Plans",
+      "des": "Subscription-based or one-time projects — flexible plans tailored to your needs",
+      "linkText": "View Plans"
+    }
   }
+
 }

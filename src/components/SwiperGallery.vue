@@ -69,22 +69,22 @@ const { t } = useI18n()
 const slides = [
   {
     img: img1,
-    title: '客製化品牌網站',
-    desc: '以 Vue + Laravel 打造高效能、可長期維護的形象網站',
+    title: t('swiper.img1.title'),
+    desc: t('swiper.img1.des'),
     link: '/pricing',
-    linkText: '作品集',
+    linkText: t('swiper.img1.linkText'),
   },
   {
     img: img2,
-    title: '系統與後台開發',
-    desc: '會員系統、訂單流程、金流串接，完整全端解決方案',
+    title: t('swiper.img2.title'),
+    desc: t('swiper.img2.des'),
   },
   {
     img: img3,
-    title: '付費方案',
-    desc: '訂閱制、一次性專案，彈性選擇適合你的方案',
+    title: t('swiper.img3.title'),
+    desc: t('swiper.img3.des'),
     link: '/pricing',
-    linkText: '方案詳情',
+    linkText: t('swiper.img3.linkText'),
   },
 ]
 </script>

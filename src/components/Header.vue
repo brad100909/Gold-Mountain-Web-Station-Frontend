@@ -14,6 +14,12 @@
         <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">聯絡我</a>
         <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">方案介紹</a>
         
+        <button
+        @click="toggleLocale"
+        class="ml-6 text-sm font-medium text-gray-600 hover:text-green-700 transition"
+        >
+        {{ locale === 'zh' ? 'switch to English' : '切換到中文' }}  
+        </button>
       </nav>
 
       <!-- Mobile Hamburger -->
@@ -38,6 +44,12 @@
         <a href="#services" class="text-gray-700 hover:text-green-700 font-medium transition">服務</a>
         <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">聯絡我</a>
         <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium transition">方案介紹</a>
+        <button
+        @click="toggleLocale"
+        class="text-sm font-medium text-gray-600 hover:text-green-700 transition"
+        >
+        {{ locale === 'zh' ? 'switch to English' : '切換到中文' }}
+      </button>
       </nav>
     </div>
   </header>
@@ -45,11 +57,19 @@
 
 <script setup>
 import { ref } from 'vue'
-
+import { useI18n } from 'vue-i18n'
 const menuOpen = ref(false)
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value
 }
+
+const { locale } = useI18n()
+
+const toggleLocale = () => {
+  locale.value = locale.value === 'zh' ? 'en' : 'zh'
+}
+
+
 </script>
 
 <style scoped>
