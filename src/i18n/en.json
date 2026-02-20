@@ -76,6 +76,15 @@
       "des": "Subscription-based or one-time projects — flexible plans tailored to your needs",
       "linkText": "View Plans"
     }
+  },
+
+  "chat": {
+    "toggleLabel": "Open AI Assistant",
+    "subtitle": "Golden Mountain AI Assistant",
+    "welcomeMessage": "Hi! I'm the Golden Mountain AI assistant. Feel free to ask me anything about our services, portfolio, or how we can help your project.",
+    "inputPlaceholder": "Type a message, press Enter to send…",
+    "sendLabel": "Send",
+    "errorGeneric": "Something went wrong. Please try again."
   }
 
 }
