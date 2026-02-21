@@ -58,7 +58,20 @@
   "contact": {
     "title": "Have a Project in Mind?",
     "description": "Briefly describe your idea. I’ll evaluate it and provide practical, actionable suggestions.",
-    "cta": "Free Project Consultation"
+    "cta": "Free Project Consultation",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Project details",
+      "messagePlaceholder": "Briefly describe your project, budget, or timeline…",
+      "submit": "Send Inquiry",
+      "submitting": "Sending…",
+      "successTitle": "Message received!",
+      "successBody": "I typically reply within 1–2 business days. Thanks for reaching out.",
+      "errorGeneric": "Submission failed. Please try again."
+    }
   },
 
   "swiper": {

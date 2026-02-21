@@ -151,20 +151,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-24 px-6 text-center bg-gray-900 text-gray-100">
-      <h2 class="text-2xl font-semibold mb-6">
-        {{ t('contact.title') }}
-      </h2>
-      <p class="text-gray-400 mb-10">
-        {{ t('contact.description') }}
-      </p>
-      <a
-        href="mailto:your@email.com"
-        class="inline-block px-10 py-4 bg-green-700 text-white rounded-lg hover:bg-green-800 transition"
-      >
-        {{ t('contact.cta') }}
-      </a>
-    </section>
+    <ContactForm />
   </div>
 </template>
 
@@ -172,6 +159,7 @@
 import { onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SwiperGallery from '../components/SwiperGallery.vue'
+import ContactForm from '../components/ContactForm.vue'
 
 const { t } = useI18n()
 
