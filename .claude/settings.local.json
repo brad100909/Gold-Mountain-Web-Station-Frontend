@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:/Users/Brad/Desktop/brad_web_station/web_station_backend\" add package-lock.json)",
+      "Bash(git -C:*)",
+      "Bash(git -C \"C:/Users/Brad/Desktop/brad_web_station/web_station_backend\" push)",
+      "Bash(ssh:*)"
+    ]
+  }
+}
