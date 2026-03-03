@@ -1,4 +1,12 @@
 {
+  "nav": {
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact",
+    "pricing": "Pricing",
+    "logoText": "Web Design"
+  },
+
   "video": {
     "notSupported": "Your browser does not support video playback."
   },
@@ -89,6 +97,40 @@
       "des": "Subscription-based or one-time projects — flexible plans tailored to your needs",
       "linkText": "View Plans"
     }
+  },
+
+  "footer": {
+    "tagline": "Building websites and systems that grow with your brand.",
+    "description": "No templates. Every project is designed to last — built with the question: will this still work three years from now?",
+    "emailLabel": "Email",
+    "copyright": "© 2025 Golden Mountain. All rights reserved."
+  },
+
+  "portfolioPage": {
+    "hero": {
+      "eyebrow": "Golden Mountain Portfolio",
+      "title": "Demo Projects",
+      "subtitle": "Three demo projects showcasing different types of websites and systems — built as reference examples for prospective clients."
+    },
+    "project1": {
+      "category": "Brand Website",
+      "title": "Corporate Brand Website",
+      "desc": "A custom brand website built without templates, focused on performance, SEO, and visual consistency — turning your site into a real business asset.",
+      "cta": "View Demo"
+    },
+    "project2": {
+      "category": "E-commerce",
+      "title": "Online Shop Platform",
+      "desc": "A complete e-commerce flow with product listings, cart, checkout, and payment integration. Backend includes order and inventory management.",
+      "cta": "View Demo"
+    },
+    "project3": {
+      "category": "Admin System",
+      "title": "Membership Admin Dashboard",
+      "desc": "Member data management, role-based access, activity logs, and analytics charts — built with scalability and long-term maintainability in mind.",
+      "cta": "View Demo"
+    },
+    "backHome": "Back to Home"
   },
 
   "chat": {

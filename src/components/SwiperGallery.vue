@@ -50,6 +50,7 @@
 
 
 <script setup>
+import { computed } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import { RouterLink } from 'vue-router'
@@ -66,7 +67,7 @@ import linkpic from '/linkpic.png'
 
 const { t } = useI18n()
 
-const slides = [
+const slides = computed(() => [
   {
     img: img1,
     title: t('swiper.img1.title'),
@@ -86,7 +87,7 @@ const slides = [
     link: '/pricing',
     linkText: t('swiper.img3.linkText'),
   },
-]
+])
 </script>
 
 

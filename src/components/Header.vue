@@ -5,15 +5,15 @@
       <!-- Logo -->
       <div class="flex items-center gap-3">
         <img src="/Logo.svg" alt="Gold Mountain Logo" class="h-8 w-auto" />
-        <span class="text-xl font-bold text-gray-800">Golden Mountain 網頁設計</span>
+        <span class="text-xl font-bold text-gray-800">Golden Mountain {{ t('nav.logoText') }}</span>
       </div>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-        <a class="nav-link" href="#portfolio">作品</a>
-        <a class="nav-link" href="#services">服務</a>
-        <a class="nav-link" href="#contact">聯絡我</a>
-        <a class="nav-link" href="#pricing">方案介紹</a>
+        <router-link class="nav-link" :to="'/' + locale + '/portfolio'">{{ t('nav.portfolio') }}</router-link>
+        <a class="nav-link" href="#services">{{ t('nav.services') }}</a>
+        <a class="nav-link" href="#contact">{{ t('nav.contact') }}</a>
+        <a class="nav-link" href="#pricing">{{ t('nav.pricing') }}</a>
 
         <!-- Language Switch -->
         <div class="ml-2 relative flex items-center rounded-full bg-[#F5F2EA] p-1 text-xs">
@@ -58,10 +58,34 @@
     <!-- Mobile Menu -->
     <div v-if="menuOpen" class="md:hidden bg-white border-t border-gray-100">
       <nav class="flex flex-col px-6 py-4 space-y-4 text-sm">
-        <a class="nav-link" href="#portfolio">作品</a>
-        <a class="nav-link" href="#services">服務</a>
-        <a class="nav-link" href="#contact">聯絡我</a>
-        <a class="nav-link" href="#pricing">方案介紹</a>
+        <router-link class="nav-link" :to="'/' + locale + '/portfolio'" @click="menuOpen = false">{{ t('nav.portfolio') }}</router-link>
+        <a class="nav-link" href="#services" @click="menuOpen = false">{{ t('nav.services') }}</a>
+        <a class="nav-link" href="#contact" @click="menuOpen = false">{{ t('nav.contact') }}</a>
+        <a class="nav-link" href="#pricing" @click="menuOpen = false">{{ t('nav.pricing') }}</a>
+
+        <!-- Mobile Language Switch -->
+        <div class="pt-2 relative flex items-center rounded-full bg-[#F5F2EA] p-1 text-xs w-fit">
+          <button
+            @click="locale !== 'zh' && toggleLocale()"
+            class="relative z-10 px-3 py-1 rounded-full transition-colors"
+            :class="locale === 'zh' ? 'text-[#3B3320]' : 'text-[#A58A4A]'"
+          >
+            中
+          </button>
+          <button
+            @click="locale !== 'en' && toggleLocale()"
+            class="relative z-10 px-3 py-1 rounded-full transition-colors"
+            :class="locale === 'en' ? 'text-[#3B3320]' : 'text-[#A58A4A]'"
+          >
+            EN
+          </button>
+          <span
+            class="absolute top-1 bottom-1 w-[calc(50%-4px)] rounded-full
+                   bg-gradient-to-r from-[#D8C690] to-[#BFA76A]
+                   transition-all duration-300"
+            :class="locale === 'zh' ? 'left-1' : 'left-[calc(50%+2px)]'"
+          />
+        </div>
       </nav>
     </div>
   </header>
@@ -70,15 +94,20 @@
 <script setup>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter, useRoute } from 'vue-router'
 
 const menuOpen = ref(false)
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value
 }
 
-const { locale } = useI18n()
+const { t, locale } = useI18n()
+const router = useRouter()
+const route = useRoute()
+
 const toggleLocale = () => {
-  locale.value = locale.value === 'zh' ? 'en' : 'zh'
+  const newLang = locale.value === 'zh' ? 'en' : 'zh'
+  router.push({ params: { ...route.params, lang: newLang } })
 }
 </script>
 

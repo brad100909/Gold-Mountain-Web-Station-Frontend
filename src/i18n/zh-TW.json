@@ -1,4 +1,12 @@
 {
+  "nav": {
+    "portfolio": "作品",
+    "services": "服務",
+    "contact": "聯絡我",
+    "pricing": "方案介紹",
+    "logoText": "網頁設計"
+  },
+
   "video": {
     "notSupported": "你的瀏覽器不支援影片"
   },
@@ -91,6 +99,40 @@
       "linkText" : "方案詳情"
 
     }
+  },
+
+  "footer": {
+    "tagline": "打造能長期成長的品牌網站與系統",
+    "description": "不使用套版，從一開始就以「三年後還能不能用」為標準設計每一個專案。",
+    "emailLabel": "Email",
+    "copyright": "© 2025 Golden Mountain. All rights reserved."
+  },
+
+  "portfolioPage": {
+    "hero": {
+      "eyebrow": "Golden Mountain 作品集",
+      "title": "示範專案展示",
+      "subtitle": "以下三個示範專案，呈現不同類型的網站與系統設計，供您作為參考依據。"
+    },
+    "project1": {
+      "category": "形象網站",
+      "title": "企業品牌官網",
+      "desc": "為品牌量身打造的形象網站，不使用套版，著重速度、SEO 與視覺一致性，讓官網成為真正的業務入口。",
+      "cta": "查看示範頁面"
+    },
+    "project2": {
+      "category": "電商系統",
+      "title": "電商訂購平台",
+      "desc": "完整商品展示、購物車、結帳與金流串接流程，後台可管理訂單與庫存，支援多元付款方式。",
+      "cta": "查看示範頁面"
+    },
+    "project3": {
+      "category": "後台系統",
+      "title": "會員管理後台",
+      "desc": "會員資料管理、權限分級、操作紀錄與數據圖表，系統架構從一開始即考慮可擴充性與長期維護。",
+      "cta": "查看示範頁面"
+    },
+    "backHome": "返回首頁"
   },
 
   "chat": {

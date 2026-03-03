@@ -8,7 +8,8 @@ const routes = [
     path: '/:lang(zh|en)',
     component: LangWrapper, // 用 wrapper
     children: [
-      { path: '', name: 'home', component: () => import('../views/Home.vue') }
+      { path: '', name: 'home', component: () => import('../views/Home.vue') },
+      { path: 'portfolio', name: 'portfolio', component: () => import('../views/Portfolio.vue') }
     ]
   }
 ]
