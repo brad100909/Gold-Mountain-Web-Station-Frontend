@@ -11,7 +11,8 @@ const routes = [
       { path: '', name: 'home', component: () => import('../views/Home.vue') },
       { path: 'portfolio', name: 'portfolio', component: () => import('../views/Portfolio.vue') },
       { path: 'demo/shop', name: 'demo-shop', component: () => import('../views/demo/DemoShop.vue') },
-      { path: 'demo/admin', name: 'demo-admin', component: () => import('../views/demo/DemoAdmin.vue') }
+      { path: 'demo/admin', name: 'demo-admin', component: () => import('../views/demo/DemoAdmin.vue') },
+      { path: 'demo/payment-result', name: 'payment-result', component: () => import('../views/demo/PaymentResult.vue') }
     ]
   }
 ]

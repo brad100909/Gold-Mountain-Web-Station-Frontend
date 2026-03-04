@@ -164,7 +164,31 @@
     "heroEyebrow": "Sustainable Lifestyle",
     "heroTitle": "Simple Choices, Good Living",
     "heroDesc": "Thoughtfully selected eco-friendly products for everyday life.",
-    "close": "Close"
+    "close": "Close",
+    "testCardLabel": "Test Card",
+    "testCardExpiry": "Expiry",
+    "heroShopNow": "Shop Now",
+    "productCount": "products",
+    "cartItems": "items",
+    "taxIncluded": "Tax included · Free shipping",
+    "continueShopping": "Continue Shopping",
+    "lowStock": "Only",
+    "checkingOut": "Redirecting…",
+    "checkoutError": "Connection failed. Please make sure the backend server is running."
+  },
+
+  "payment": {
+    "successTitle": "Payment Successful!",
+    "successDesc": "Thank you for your purchase. Here are your order details.",
+    "failedTitle": "Payment Failed",
+    "failedDesc": "The payment was not completed. Please try again.",
+    "orderNo": "Order No.",
+    "amount": "Amount Paid",
+    "method": "Payment Method",
+    "creditCard": "Credit Card",
+    "demoNote": "This is a demo transaction — no actual charges were made",
+    "backToShop": "Back to Shop",
+    "backToHome": "Back to Home"
   },
 
   "portfolioPage": {

@@ -166,7 +166,31 @@
     "heroEyebrow": "永續生活選物",
     "heroTitle": "簡單選擇，好好生活",
     "heroDesc": "精選對環境友善的生活用品，讓每一次消費都有意義。",
-    "close": "關閉"
+    "close": "關閉",
+    "testCardLabel": "測試信用卡",
+    "testCardExpiry": "有效期",
+    "heroShopNow": "立即選購",
+    "productCount": "件商品",
+    "cartItems": "件商品",
+    "taxIncluded": "含稅・免運費",
+    "continueShopping": "繼續購物",
+    "lowStock": "僅剩",
+    "checkingOut": "前往付款…",
+    "checkoutError": "連線失敗，請確認後端服務已啟動。"
+  },
+
+  "payment": {
+    "successTitle": "付款成功！",
+    "successDesc": "感謝您的購買，以下是您的訂單資訊。",
+    "failedTitle": "付款失敗",
+    "failedDesc": "付款未完成，請返回重試。",
+    "orderNo": "訂單編號",
+    "amount": "付款金額",
+    "method": "付款方式",
+    "creditCard": "信用卡",
+    "demoNote": "這是示範交易，不會產生實際費用",
+    "backToShop": "返回商店",
+    "backToHome": "回到首頁"
   },
 
   "portfolioPage": {
