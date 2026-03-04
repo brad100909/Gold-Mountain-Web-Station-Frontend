@@ -9,7 +9,9 @@ const routes = [
     component: LangWrapper, // 用 wrapper
     children: [
       { path: '', name: 'home', component: () => import('../views/Home.vue') },
-      { path: 'portfolio', name: 'portfolio', component: () => import('../views/Portfolio.vue') }
+      { path: 'portfolio', name: 'portfolio', component: () => import('../views/Portfolio.vue') },
+      { path: 'demo/shop', name: 'demo-shop', component: () => import('../views/demo/DemoShop.vue') },
+      { path: 'demo/admin', name: 'demo-admin', component: () => import('../views/demo/DemoAdmin.vue') }
     ]
   }
 ]
