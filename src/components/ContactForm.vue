@@ -22,7 +22,7 @@
         <div class="flex flex-col gap-2 text-sm">
           <span class="text-gray-500 text-xs uppercase tracking-widest">{{ t('footer.emailLabel') }}</span>
           <a
-            href="mailto:brad100909@gmail.com"
+            href="mailto:goldenmountain100707@gmail.com"
             class="text-gray-300 hover:text-[#BFA76A] transition-colors duration-200 flex items-center gap-2"
           >
             <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -33,8 +33,17 @@
                    1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25
                    2.25 0 01-1.07-1.916V6.75" />
             </svg>
-            brad100909@gmail.com
+            goldenmountain100707@gmail.com
           </a>
+        </div>
+
+        <!-- LINE QR Code -->
+        <div class="flex flex-col gap-2">
+          <span class="text-gray-500 text-xs uppercase tracking-widest">LINE</span>
+          <div class="flex items-center gap-4">
+            <img src="/Line.png" alt="LINE QR Code" class="w-24 h-24 rounded-lg bg-white p-1.5" />
+            <p class="text-gray-400 text-xs leading-relaxed">{{ t('footer.lineDesc') }}</p>
+          </div>
         </div>
 
         <!-- Gold divider -->

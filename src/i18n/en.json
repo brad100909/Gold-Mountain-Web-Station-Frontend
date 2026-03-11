@@ -9,7 +9,11 @@
     "demoShop": "Shop Demo",
     "demoShopSub": "Browse the online store",
     "demoAdmin": "Admin Demo",
-    "demoAdminSub": "Try the admin dashboard"
+    "demoAdminSub": "Try the admin dashboard",
+    "demoBooking": "Booking Demo",
+    "demoBookingSub": "Experience online scheduling",
+    "demoDashboard": "Dashboard Demo",
+    "demoDashboardSub": "Analytics & business overview"
   },
 
   "video": {
@@ -95,7 +99,8 @@
     },
     "img2": {
       "title": "System & Admin Development",
-      "des": "Membership systems, order workflows, and payment integrations — a complete full-stack solution"
+      "des": "Membership systems, order workflows, and payment integrations — a complete full-stack solution",
+      "linkText": "Demo Projects"
     },
     "img3": {
       "title": "Pricing Plans",
@@ -108,6 +113,7 @@
     "tagline": "Building websites and systems that grow with your brand.",
     "description": "No templates. Every project is designed to last — built with the question: will this still work three years from now?",
     "emailLabel": "Email",
+    "lineDesc": "Scan to add on LINE and chat about your project",
     "copyright": "© 2025 Golden Mountain. All rights reserved."
   },
 
@@ -216,6 +222,236 @@
       "cta": "View Demo"
     },
     "backHome": "Back to Home"
+  },
+
+  "pricingPage": {
+    "eyebrow": "Golden Mountain Pricing",
+    "title": "Transparent Pricing, Find Your Plan",
+    "subtitle": "One-time payment or monthly subscription — choose the model that fits your stage and needs.",
+    "tabOnetime": "One-Time",
+    "tabSubscription": "Monthly",
+    "popular": "Most Popular",
+    "oneTimePayment": "One-time fee, maintenance not included",
+    "cancelAnytime": "Cancel anytime, no lock-in",
+    "month": "mo",
+    "cta": "Get in Touch",
+    "customNote": "Prices above are base estimates and may vary based on project complexity. Feel free to reach out and discuss before committing.",
+    "subscriptionNote": "Subscription plans assume you already have a website. If not, start with a one-time plan first.",
+
+    "ot1": {
+      "name": "Starter Website",
+      "desc": "For personal brands, studios, and small service businesses",
+      "f1": "Single or multi-page website (up to 5 pages)",
+      "f2": "Responsive design (mobile, tablet, desktop)",
+      "f3": "Contact form + email notification",
+      "f4": "Basic SEO setup",
+      "f5": "30-day free revisions after launch",
+      "note": "Best for: Those who need a clean, professional online presence to get started"
+    },
+    "ot2": {
+      "name": "Business Website",
+      "desc": "For SMEs, service providers, and brand websites",
+      "f1": "Multi-page website (no page limit)",
+      "f2": "Responsive design + scroll animations",
+      "f3": "Contact form, AI chat integration",
+      "f4": "Full SEO optimization + GA tracking",
+      "f5": "Bilingual support (ZH / EN)",
+      "f6": "60-day free revisions after launch",
+      "note": "Best for: Businesses that need a complete brand presence built for long-term growth"
+    },
+    "ot3": {
+      "name": "System / E-commerce",
+      "desc": "For businesses needing admin, membership, or payment flows",
+      "f1": "Full-stack development (Vue 3 + Laravel)",
+      "f2": "Membership system and order flow design",
+      "f3": "Payment gateway integration",
+      "f4": "Admin dashboard (products, orders, members)",
+      "f5": "Third-party API integrations (LINE, logistics, etc.)",
+      "f6": "90-day free revisions after launch",
+      "note": "Typically ranges from NT$120,000–300,000 depending on complexity — contact us to discuss"
+    },
+
+    "sub1": {
+      "name": "Maintenance",
+      "desc": "Essential upkeep to keep your site running smoothly",
+      "f1": "VPS server management and monitoring",
+      "f2": "SSL certificate auto-renewal",
+      "f3": "Daily backups",
+      "f4": "Monthly maintenance report",
+      "note": "Best for: Clients with an existing site who just need reliable server management"
+    },
+    "sub2": {
+      "name": "Growth",
+      "desc": "Maintenance + monthly updates and improvements",
+      "f1": "Everything in Maintenance",
+      "f2": "3 hours/month for feature tweaks or content updates",
+      "f3": "Performance optimization and speed tuning",
+      "f4": "Priority response (within 24 hours)",
+      "f5": "Quarterly SEO health report",
+      "note": "Best for: Clients who want continuous improvement without managing it themselves"
+    },
+    "sub3": {
+      "name": "Full Partner",
+      "desc": "Complete technical partnership, zero hassle",
+      "f1": "Everything in Growth",
+      "f2": "8 dev hours/month (unused hours carry over, up to 24 hrs max; no cash refund)",
+      "f3": "Feature planning and technical consulting",
+      "f4": "Emergency priority scheduling",
+      "f5": "Monthly technical consultation",
+      "f6": "Annual architecture health check",
+      "note": "Best for: Growing businesses that want to fully outsource their technical operations"
+    },
+
+    "faqTitle": "Frequently Asked Questions",
+    "faq1q": "Are the prices fixed?",
+    "faq1a": "The prices shown are base estimates. Final pricing depends on feature complexity, number of pages, and integrations required. For system development, please reach out first so I can provide an accurate quote.",
+    "faq2q": "Can I cancel my subscription anytime?",
+    "faq2a": "Yes. There is no minimum contract period. Just give one month's notice and I'll cancel it. Unused dev hours are settled within the current month and do not carry over.",
+    "faq3q": "Does the one-time plan include hosting?",
+    "faq3a": "No, hosting is billed separately based on server specs (typically NT$300–800/month). You can pair it with a subscription maintenance plan if you'd like it handled together.",
+    "faq4q": "Can I add a subscription plan after my site launches?",
+    "faq4a": "Absolutely. Many clients complete a one-time website build first, then add a subscription plan once the site is stable. Both options are fully independent."
+  },
+
+  "contactPage": {
+    "eyebrow": "Contact Golden Mountain",
+    "title": "Let's Talk About Your Project",
+    "subtitle": "Whether you have a rough idea or a detailed spec, feel free to reach out. I typically reply within 1–2 business days."
+  },
+
+  "servicesPage": {
+    "eyebrow": "Golden Mountain Services",
+    "title": "What I Can Build for You",
+    "subtitle": "From brand websites to full systems — every project is designed to still work well three years from now, not just look good on launch day.",
+
+    "svc1": {
+      "title": "Custom Brand Websites",
+      "tagline": "Make your brand convincing at first glance",
+      "desc": "No templates. From brand positioning and visual language to user experience, everything is designed around your specific needs. A website isn't just a business card — it's a tool that generates real inquiries and conversions.",
+      "f1": "Responsive design — perfect on mobile, tablet, and desktop",
+      "f2": "Page speed optimization and foundational SEO setup",
+      "f3": "Vue 3 + Laravel architecture — built to be maintained long-term",
+      "f4": "Integrates with contact forms, AI chat, payment gateways, and more",
+      "note": "Best for: Businesses that want a website that actually represents their brand"
+    },
+
+    "svc2": {
+      "title": "System & Membership Development",
+      "desc": "Membership systems, order management, admin dashboards, API integrations — built from day one with maintainability and scalability in mind, so you don't have to rebuild when your business grows.",
+      "tagline": "Let the system handle what used to be manual work",
+      "f1": "Member registration, login, and role-based access control",
+      "f2": "Order workflows and payment gateway integration",
+      "f3": "Admin dashboard: products, orders, analytics reports",
+      "f4": "Third-party API integrations (LINE, logistics, ERP, etc.)",
+      "note": "Best for: Growing businesses that need data management and workflow automation"
+    },
+
+    "svc3": {
+      "title": "VPS Setup & Long-Term Maintenance",
+      "tagline": "I stay responsible after launch",
+      "desc": "From server procurement and environment setup to SSL and daily operations — handled end to end. Going live isn't the finish line, it's the start of a long-term partnership. Your technical issues always have a dedicated contact.",
+      "f1": "VPS server setup (Nginx, PHP, MySQL)",
+      "f2": "SSL certificate provisioning and auto-renewal",
+      "f3": "Daily backups, performance monitoring, and anomaly alerts",
+      "f4": "Monthly maintenance reports and update support",
+      "note": "Best for: Clients who want a dedicated technical partner without managing servers themselves"
+    },
+
+    "processEyebrow": "How It Works",
+    "processTitle": "Four Steps from Idea to Launch",
+    "step1": "Discovery",
+    "step1Desc": "We discuss your business, target audience, and requirements — free feasibility assessment included",
+    "step2": "Proposal",
+    "step2Desc": "I provide a system design, feature list, and quote. Work starts only after you approve the direction",
+    "step3": "Development",
+    "step3Desc": "Delivered in phases with regular progress updates — you can see results at every stage",
+    "step4": "Launch & Support",
+    "step4Desc": "Deployment support included. Ongoing maintenance and improvements available after launch",
+
+    "ctaTitle": "Have a Project in Mind?",
+    "ctaDesc": "Whether you have a rough idea or a detailed spec, feel free to reach out. I'll evaluate feasibility and give you honest, practical advice — no hard sell.",
+    "ctaBtn": "Free Project Consultation",
+    "ctaBtnSecondary": "View Demo Projects"
+  },
+
+  "dashboard": {
+    "banner": "This is a dashboard demo — all figures are fictional data",
+    "sidebarSub": "Analytics Platform",
+    "title": "Business Overview",
+    "subtitle": "Real-time operational metrics and trends",
+    "vsLastPeriod": "vs last period",
+    "revenueTrend": "Revenue Trend",
+    "unit": "Unit: thousands",
+    "serviceBreakdown": "Service Breakdown",
+    "recentOrders": "Recent Orders",
+    "viewAll": "View All",
+    "orders": "orders",
+    "period7d": "7D",
+    "periodMonth": "Month",
+    "periodYear": "Year",
+    "statRevenue": "Total Revenue",
+    "statOrders": "Orders",
+    "statMembers": "New Members",
+    "statRate": "Conv. Rate",
+    "navOverview": "Overview",
+    "navOrders": "Orders",
+    "navClients": "Clients",
+    "navServices": "Services",
+    "navReports": "Reports",
+    "navSettings": "Settings",
+    "colOrder": "Order ID",
+    "colClient": "Client",
+    "colService": "Service",
+    "colDate": "Date",
+    "colAmount": "Amount",
+    "colStatus": "Status",
+    "status_paid": "Paid",
+    "status_pending": "Pending",
+    "status_cancelled": "Cancelled",
+    "svcA": "Brand Website",
+    "svcB": "Member System",
+    "svcC": "VPS Maintenance"
+  },
+
+  "booking": {
+    "banner": "This is a booking demo — no data will actually be submitted",
+    "brandName": "Verdant Wellness Center",
+    "brandSub": "Professional Health Consultation & Beauty Services",
+    "step1": "Service",
+    "step2": "Date",
+    "step3": "Time",
+    "step4": "Confirm",
+    "selectService": "Select a Service",
+    "svcConsult": "Health Consultation",
+    "svcConsultDuration": "60 min",
+    "svcBeauty": "Beauty Treatment",
+    "svcBeautyDuration": "90 min",
+    "svcHealth": "Wellness Therapy",
+    "svcHealthDuration": "120 min",
+    "selectDate": "Select a Date",
+    "selectTime": "Select a Time Slot",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "confirm": "Confirm Appointment",
+    "labelService": "Service",
+    "labelDate": "Date",
+    "labelTime": "Time",
+    "labelDuration": "Duration",
+    "labelName": "Your Name",
+    "namePlaceholder": "Enter your name",
+    "labelNote": "Notes",
+    "optional": "optional",
+    "notePlaceholder": "Any special requests or notes…",
+    "next": "Next",
+    "back": "Back",
+    "submit": "Book Now",
+    "successTitle": "Booking Confirmed!",
+    "successDesc": "{name}, your appointment has been booked. We'll confirm via SMS or email shortly.",
+    "bookAgain": "Book Again",
+    "slotAvailable": "Available",
+    "slotBooked": "Booked",
+    "slotBookedLabel": "Booked"
   },
 
   "chat": {

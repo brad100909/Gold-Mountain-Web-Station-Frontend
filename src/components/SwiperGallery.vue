@@ -53,7 +53,7 @@
 import { computed } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
 import 'swiper/css'
@@ -66,25 +66,28 @@ import img3 from '/sample5.jpg'
 import linkpic from '/linkpic.png'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const slides = computed(() => [
   {
     img: img1,
     title: t('swiper.img1.title'),
     desc: t('swiper.img1.des'),
-    link: '/pricing',
+    link: { name: 'portfolio', params: { lang: route.params.lang } },
     linkText: t('swiper.img1.linkText'),
   },
   {
     img: img2,
     title: t('swiper.img2.title'),
     desc: t('swiper.img2.des'),
+    link: { name: 'home', params: { lang: route.params.lang }, query: { showDemo: '1' } },
+    linkText: t('swiper.img2.linkText'),
   },
   {
     img: img3,
     title: t('swiper.img3.title'),
     desc: t('swiper.img3.des'),
-    link: '/pricing',
+    link: { name: 'pricing', params: { lang: route.params.lang } },
     linkText: t('swiper.img3.linkText'),
   },
 ])

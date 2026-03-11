@@ -14,7 +14,7 @@
 
         <!-- Demo Dropdown -->
         <div class="relative group">
-          <button class="nav-link flex items-center gap-1 cursor-pointer select-none">
+          <button class="nav-link flex items-center gap-1 cursor-pointer select-none" :class="{ 'demo-pulse': demoPulse }">
             {{ t('nav.demo') }}
             <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180"
               fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -51,13 +51,39 @@
                   <div class="text-[11px] text-gray-400">{{ t('nav.demoAdminSub') }}</div>
                 </div>
               </router-link>
+              <div class="border-t border-gray-100"></div>
+              <router-link
+                :to="'/' + locale + '/demo/booking'"
+                class="flex items-center gap-3 px-4 py-3 hover:bg-[#F5F2EA] transition-colors group/item"
+              >
+                <span class="text-lg">📅</span>
+                <div>
+                  <div class="text-sm font-medium text-gray-800 group-hover/item:text-[#A58A4A]">
+                    {{ t('nav.demoBooking') }}
+                  </div>
+                  <div class="text-[11px] text-gray-400">{{ t('nav.demoBookingSub') }}</div>
+                </div>
+              </router-link>
+              <div class="border-t border-gray-100"></div>
+              <router-link
+                :to="'/' + locale + '/demo/dashboard'"
+                class="flex items-center gap-3 px-4 py-3 hover:bg-[#F5F2EA] transition-colors group/item"
+              >
+                <span class="text-lg">📊</span>
+                <div>
+                  <div class="text-sm font-medium text-gray-800 group-hover/item:text-[#A58A4A]">
+                    {{ t('nav.demoDashboard') }}
+                  </div>
+                  <div class="text-[11px] text-gray-400">{{ t('nav.demoDashboardSub') }}</div>
+                </div>
+              </router-link>
             </div>
           </div>
         </div>
 
-        <a class="nav-link" href="#services">{{ t('nav.services') }}</a>
-        <a class="nav-link" href="#contact">{{ t('nav.contact') }}</a>
-        <a class="nav-link" href="#pricing">{{ t('nav.pricing') }}</a>
+        <router-link class="nav-link" :to="'/' + locale + '/services'">{{ t('nav.services') }}</router-link>
+        <router-link class="nav-link" :to="'/' + locale + '/contact'">{{ t('nav.contact') }}</router-link>
+        <router-link class="nav-link" :to="'/' + locale + '/pricing'">{{ t('nav.pricing') }}</router-link>
 
         <!-- Language Switch -->
         <div class="ml-2 relative flex items-center rounded-full bg-[#F5F2EA] p-1 text-xs">
@@ -145,12 +171,34 @@
                 <div class="text-[11px] text-gray-400">{{ t('nav.demoAdminSub') }}</div>
               </div>
             </router-link>
+            <router-link
+              :to="'/' + locale + '/demo/booking'"
+              @click="menuOpen = false"
+              class="flex items-center gap-2 py-2 text-gray-600 hover:text-[#A58A4A] transition-colors"
+            >
+              <span>📅</span>
+              <div>
+                <div class="font-medium text-sm">{{ t('nav.demoBooking') }}</div>
+                <div class="text-[11px] text-gray-400">{{ t('nav.demoBookingSub') }}</div>
+              </div>
+            </router-link>
+            <router-link
+              :to="'/' + locale + '/demo/dashboard'"
+              @click="menuOpen = false"
+              class="flex items-center gap-2 py-2 text-gray-600 hover:text-[#A58A4A] transition-colors"
+            >
+              <span>📊</span>
+              <div>
+                <div class="font-medium text-sm">{{ t('nav.demoDashboard') }}</div>
+                <div class="text-[11px] text-gray-400">{{ t('nav.demoDashboardSub') }}</div>
+              </div>
+            </router-link>
           </div>
         </div>
 
-        <a class="nav-link py-2.5" href="#services" @click="menuOpen = false">{{ t('nav.services') }}</a>
-        <a class="nav-link py-2.5" href="#contact" @click="menuOpen = false">{{ t('nav.contact') }}</a>
-        <a class="nav-link py-2.5" href="#pricing" @click="menuOpen = false">{{ t('nav.pricing') }}</a>
+        <router-link class="nav-link py-2.5" :to="'/' + locale + '/services'" @click="menuOpen = false">{{ t('nav.services') }}</router-link>
+        <router-link class="nav-link py-2.5" :to="'/' + locale + '/contact'" @click="menuOpen = false">{{ t('nav.contact') }}</router-link>
+        <router-link class="nav-link py-2.5" :to="'/' + locale + '/pricing'" @click="menuOpen = false">{{ t('nav.pricing') }}</router-link>
 
         <!-- Mobile Language Switch -->
         <div class="pt-3 relative flex items-center rounded-full bg-[#F5F2EA] p-1 text-xs w-fit">
@@ -181,12 +229,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter, useRoute } from 'vue-router'
 
 const menuOpen = ref(false)
 const demoOpen = ref(false)
+const demoPulse = ref(false)
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value
@@ -196,6 +245,14 @@ const toggleMenu = () => {
 const { t, locale } = useI18n()
 const router = useRouter()
 const route = useRoute()
+
+watch(() => route.query.showDemo, (val) => {
+  if (val === '1') {
+    demoPulse.value = true
+    setTimeout(() => { demoPulse.value = false }, 1000)
+    router.replace({ query: {} })
+  }
+})
 
 const toggleLocale = () => {
   const newLang = locale.value === 'zh' ? 'en' : 'zh'
@@ -222,5 +279,15 @@ const toggleLocale = () => {
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.demo-pulse {
+  color: #BFA76A;
+  animation: demoBounce 0.5s ease infinite;
+}
+
+@keyframes demoBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
 }
 </style>

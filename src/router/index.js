@@ -10,9 +10,16 @@ const routes = [
     children: [
       { path: '', name: 'home', component: () => import('../views/Home.vue') },
       { path: 'portfolio', name: 'portfolio', component: () => import('../views/Portfolio.vue') },
+      { path: 'services', name: 'services', component: () => import('../views/Services.vue') },
+      { path: 'contact', name: 'contact', component: () => import('../views/Contact.vue') },
+      { path: 'pricing', name: 'pricing', component: () => import('../views/Pricing.vue') },
       { path: 'demo/shop', name: 'demo-shop', component: () => import('../views/demo/DemoShop.vue') },
       { path: 'demo/admin', name: 'demo-admin', component: () => import('../views/demo/DemoAdmin.vue') },
-      { path: 'demo/payment-result', name: 'payment-result', component: () => import('../views/demo/PaymentResult.vue') }
+      { path: 'demo/payment-result', name: 'payment-result', component: () => import('../views/demo/PaymentResult.vue') },
+      { path: 'demo/booking', name: 'demo-booking', component: () => import('../views/demo/DemoBooking.vue') },
+      { path: 'demo/dashboard', name: 'demo-dashboard', component: () => import('../views/demo/DemoDashboard.vue') },
+      { path: 'contract', name: 'contract', component: () => import('../views/ContractGenerator.vue') },
+      { path: 'spec', name: 'spec', component: () => import('../views/SpecGenerator.vue') }
     ]
   }
 ]
