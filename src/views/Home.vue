@@ -11,6 +11,14 @@
       <div class="absolute inset-0 bg-black opacity-30"></div>
 
       <div class="relative z-10">
+        <!-- 品牌標題 -->
+        <div class="observe-item opacity-0 flex items-center justify-center gap-3 mb-6">
+          <img src="/Logo.svg" alt="Golden Mountain Logo" class="w-10 h-10 md:w-12 md:h-12" />
+          <span class="text-2xl md:text-3xl font-bold tracking-widest bg-gradient-to-r from-[#BFA76A] via-[#E3D3A3] to-[#A58A4A] bg-clip-text text-transparent">
+            Golden Mountain 網頁設計
+          </span>
+        </div>
+
         <h1 class="observe-item opacity-0 text-4xl md:text-5xl font-extrabold mb-6 tracking-[0.10em]">
           <span
             class="bg-gradient-to-r from-[#BFA76A] via-[#E3D3A3] to-[#A58A4A] bg-clip-text text-transparent"
@@ -20,7 +28,7 @@
           </span>
         </h1>
 
-        <p class="observe-item opacity-0 text-lg md:text-xl mb-10 max-w-3xl mx-auto leading-relaxed tracking-wide">
+        <p class="observe-item opacity-0 text-lg md:text-xl mb-10 max-w-3xl mx-auto leading-relaxed tracking-wide text-gray-100">
           {{ t('hero.descLine1') }}<br />
           <strong>{{ t('hero.descStrong') }}</strong><br />
           <span class="font-semibold">
@@ -41,6 +49,15 @@
           >
             {{ t('hero.ctaContact') }}
           </a>
+        </div>
+
+        <!-- 服務亮點 -->
+        <div class="observe-item opacity-0 flex flex-wrap justify-center gap-3 mt-10">
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🌐 品牌形象網站</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🛒 電商系統開發</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">👥 會員後台系統</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🖥️ VPS 主機維護</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🌏 中英雙語支援</span>
         </div>
       </div>
     </section>
