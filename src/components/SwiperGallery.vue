@@ -60,9 +60,9 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-import img1 from '/sample1.jpg'
-import img2 from '/sample3.jpg'
-import img3 from '/sample5.jpg'
+import img1 from '/sample1.webp'
+import img2 from '/sample3.webp'
+import img3 from '/sample5.webp'
 import linkpic from '/linkpic.png'
 
 const { t } = useI18n()
