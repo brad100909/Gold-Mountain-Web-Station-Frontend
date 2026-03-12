@@ -23,11 +23,17 @@
   "hero": {
     "titleLine1": "Custom Websites & System Development",
     "titleLine2": "Built for Brands That Need Long-Term Growth",
-    "descLine1": "I don’t sell templates — I build",
-    "descStrong": "maintainable, scalable, production-ready websites and systems",
-    "descLine3": "Vue + Laravel Full-Stack Architecture｜Designed for long-term operation and expansion",
+    "descLine1": "Brand websites, e-commerce platforms, membership systems — all fully custom-built",
+    "descStrong": "Design, development & maintenance handled by one person — I don’t disappear after launch",
+    "descLine3": "For brands that want long-term growth without managing the tech themselves",
+    "brandName": "Golden Mountain Web Design",
     "ctaPortfolio": "View Portfolio",
-    "ctaContact": "Free Project Consultation"
+    "ctaContact": "Free Project Consultation",
+    "tag1": "🌐 Brand Websites",
+    "tag2": "🛒 E-Commerce Development",
+    "tag3": "👥 Membership & Admin Systems",
+    "tag4": "🖥️ VPS Hosting & Maintenance",
+    "tag5": "🌏 Bilingual (ZH / EN)"
   },
 
   "portfolio": {

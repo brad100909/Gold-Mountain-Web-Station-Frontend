@@ -15,7 +15,7 @@
         <div class="observe-item opacity-0 flex items-center justify-center gap-3 mb-6">
           <img src="/Logo.svg" alt="Golden Mountain Logo" class="w-10 h-10 md:w-12 md:h-12" />
           <span class="text-2xl md:text-3xl font-bold tracking-widest bg-gradient-to-r from-[#BFA76A] via-[#E3D3A3] to-[#A58A4A] bg-clip-text text-transparent">
-            Golden Mountain 網頁設計
+            {{ t('hero.brandName') }}
           </span>
         </div>
 
@@ -53,11 +53,11 @@
 
         <!-- 服務亮點 -->
         <div class="observe-item opacity-0 flex flex-wrap justify-center gap-3 mt-10">
-          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🌐 品牌形象網站</span>
-          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🛒 電商系統開發</span>
-          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">👥 會員後台系統</span>
-          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🖥️ VPS 主機維護</span>
-          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">🌏 中英雙語支援</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">{{ t('hero.tag1') }}</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">{{ t('hero.tag2') }}</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">{{ t('hero.tag3') }}</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">{{ t('hero.tag4') }}</span>
+          <span class="px-4 py-2 rounded-full border border-[#BFA76A]/60 text-[#E3D3A3] text-sm tracking-wide">{{ t('hero.tag5') }}</span>
         </div>
       </div>
     </section>
