@@ -241,7 +241,7 @@
     "cancelAnytime": "Cancel anytime, no lock-in",
     "month": "mo",
     "cta": "Get in Touch",
-    "customNote": "Prices above are base estimates and may vary based on project complexity. Feel free to reach out and discuss before committing.",
+    "customNote": "Not sure which to choose? The Starter site focuses on brand presence; the Booking site focuses on your intake flow — if you take appointments, go with that. All prices are base estimates, feel free to chat first.",
     "subscriptionNote": "Subscription plans assume you already have a website. If not, start with a one-time plan first.",
 
     "ot1": {
@@ -255,6 +255,16 @@
       "note": "Best for: Those who need a clean, professional online presence to get started"
     },
     "ot2": {
+      "name": "Smart Booking Website",
+      "desc": "Tired of spending hours on LINE scheduling? Let clients book themselves — automatically.",
+      "f1": "24/7 online booking — no more waiting to reply to messages",
+      "f2": "Auto confirmation + day-before reminder to reduce no-shows",
+      "f3": "Mobile-first: clients book in 30 seconds from your IG link",
+      "f4": "Client records management — track bookings and preferences",
+      "f5": "Social media integration — post links straight to booking page",
+      "note": "Best for: Nail salons, beauty studios, fitness coaches, clinics, and time-slot-based services"
+    },
+    "ot3": {
       "name": "Business Website",
       "desc": "For SMEs, service providers, and brand websites",
       "f1": "Multi-page website (no page limit)",
@@ -265,16 +275,16 @@
       "f6": "60-day free revisions after launch",
       "note": "Best for: Businesses that need a complete brand presence built for long-term growth"
     },
-    "ot3": {
+    "ot4": {
       "name": "System / E-commerce",
       "desc": "For businesses needing admin, membership, or payment flows",
       "f1": "Full-stack development (Vue 3 + Laravel)",
       "f2": "Membership system and order flow design",
-      "f3": "Payment gateway integration",
+      "f3": "Payment gateway integration (Newebpay / ECPay)",
       "f4": "Admin dashboard (products, orders, members)",
       "f5": "Third-party API integrations (LINE, logistics, etc.)",
       "f6": "90-day free revisions after launch",
-      "note": "Typically ranges from NT$120,000–300,000 depending on complexity — contact us to discuss"
+      "note": "Complexity varies widely — reach out for a free assessment and quote"
     },
 
     "sub1": {

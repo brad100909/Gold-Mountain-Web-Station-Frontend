@@ -44,8 +44,8 @@
     </div>
 
     <!-- One-time Plans -->
-    <div v-if="tab === 'onetime'" class="max-w-5xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div v-if="tab === 'onetime'" class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div
           v-for="(plan, i) in onetimePlans" :key="i"
           class="relative flex flex-col bg-white/8 backdrop-blur border rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1"
@@ -228,10 +228,10 @@ const onetimePlans = computed(() => [
     note: t('pricingPage.ot1.note'),
   },
   {
-    icon: '🏢',
+    icon: '📅',
     name: t('pricingPage.ot2.name'),
     desc: t('pricingPage.ot2.desc'),
-    price: '68,000+',
+    price: '45,000+',
     highlight: true,
     features: [
       t('pricingPage.ot2.f1'),
@@ -239,15 +239,14 @@ const onetimePlans = computed(() => [
       t('pricingPage.ot2.f3'),
       t('pricingPage.ot2.f4'),
       t('pricingPage.ot2.f5'),
-      t('pricingPage.ot2.f6'),
     ],
     note: t('pricingPage.ot2.note'),
   },
   {
-    icon: '⚙️',
+    icon: '🏢',
     name: t('pricingPage.ot3.name'),
     desc: t('pricingPage.ot3.desc'),
-    price: '120,000+',
+    price: '68,000+',
     highlight: false,
     features: [
       t('pricingPage.ot3.f1'),
@@ -259,6 +258,22 @@ const onetimePlans = computed(() => [
     ],
     note: t('pricingPage.ot3.note'),
   },
+  {
+    icon: '⚙️',
+    name: t('pricingPage.ot4.name'),
+    desc: t('pricingPage.ot4.desc'),
+    price: '180,000+',
+    highlight: false,
+    features: [
+      t('pricingPage.ot4.f1'),
+      t('pricingPage.ot4.f2'),
+      t('pricingPage.ot4.f3'),
+      t('pricingPage.ot4.f4'),
+      t('pricingPage.ot4.f5'),
+      t('pricingPage.ot4.f6'),
+    ],
+    note: t('pricingPage.ot4.note'),
+  },
 ])
 
 const subscriptionPlans = computed(() => [
@@ -266,7 +281,7 @@ const subscriptionPlans = computed(() => [
     icon: '🛡️',
     name: t('pricingPage.sub1.name'),
     desc: t('pricingPage.sub1.desc'),
-    price: '1,500',
+    price: '2,500',
     highlight: false,
     features: [
       t('pricingPage.sub1.f1'),
