@@ -18,6 +18,10 @@ const routes = [
       { path: 'demo/payment-result', name: 'payment-result', component: () => import('../views/demo/PaymentResult.vue') },
       { path: 'demo/booking', name: 'demo-booking', component: () => import('../views/demo/DemoBooking.vue') },
       { path: 'demo/dashboard', name: 'demo-dashboard', component: () => import('../views/demo/DemoDashboard.vue') },
+      { path: 'demo/restaurant', name: 'demo-restaurant', component: () => import('../views/demo/DemoRestaurant.vue') },
+      { path: 'demo/nail', name: 'demo-nail', component: () => import('../views/demo/DemoNail.vue') },
+      { path: 'demo/fitness', name: 'demo-fitness', component: () => import('../views/demo/DemoFitness.vue') },
+      { path: 'demo/cafe', name: 'demo-cafe', component: () => import('../views/demo/DemoCafe.vue') },
       { path: 'contract', name: 'contract', component: () => import('../views/ContractGenerator.vue') },
       { path: 'spec', name: 'spec', component: () => import('../views/SpecGenerator.vue') }
     ]

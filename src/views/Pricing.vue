@@ -48,6 +48,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div
           v-for="(plan, i) in onetimePlans" :key="i"
+
           class="relative flex flex-col bg-white/8 backdrop-blur border rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1"
           :class="plan.highlight
             ? 'border-[#BFA76A]/70 shadow-lg shadow-[#BFA76A]/10'
@@ -109,6 +110,32 @@
 
     <!-- Subscription Plans -->
     <div v-if="tab === 'subscription'" class="max-w-5xl mx-auto">
+
+      <!-- 月付 / 年付 切換 -->
+      <div class="flex justify-center mb-10">
+        <div class="flex items-center bg-white/10 border border-white/20 rounded-full p-1 text-sm font-medium">
+          <button
+            @click="billing = 'monthly'"
+            class="px-5 py-2 rounded-full transition-all"
+            :class="billing === 'monthly' ? 'bg-white/20 text-white' : 'text-gray-400 hover:text-white'"
+          >
+            {{ t('pricingPage.billingMonthly') }}
+          </button>
+          <button
+            @click="billing = 'annual'"
+            class="px-5 py-2 rounded-full transition-all flex items-center gap-2"
+            :class="billing === 'annual' ? 'bg-[#BFA76A] text-gray-900' : 'text-gray-400 hover:text-white'"
+          >
+            {{ t('pricingPage.billingAnnual') }}
+            <span class="text-xs font-bold px-2 py-0.5 rounded-full"
+              :class="billing === 'annual' ? 'bg-gray-900/20 text-gray-900' : 'bg-[#BFA76A]/20 text-[#BFA76A]'"
+            >
+              {{ t('pricingPage.annualSave') }}
+            </span>
+          </button>
+        </div>
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div
           v-for="(plan, i) in subscriptionPlans" :key="i"
@@ -133,10 +160,16 @@
           <div class="mb-6">
             <div class="flex items-end gap-1">
               <span class="text-gray-400 text-sm">NT$</span>
-              <span class="text-4xl font-extrabold text-white">{{ plan.price }}</span>
-              <span class="text-gray-400 text-sm mb-1">/ {{ t('pricingPage.month') }}</span>
+              <span class="text-4xl font-extrabold text-white">
+                {{ billing === 'annual' ? plan.priceAnnual : plan.price }}
+              </span>
+              <span class="text-gray-400 text-sm mb-1">
+                / {{ billing === 'annual' ? t('pricingPage.year') : t('pricingPage.month') }}
+              </span>
             </div>
-            <div class="text-gray-400 text-xs mt-1">{{ t('pricingPage.cancelAnytime') }}</div>
+            <div class="text-gray-400 text-xs mt-1">
+              {{ billing === 'annual' ? t('pricingPage.annualNote') : t('pricingPage.cancelAnytime') }}
+            </div>
           </div>
 
           <!-- Features -->
@@ -209,6 +242,7 @@ import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
 
 const tab = ref('onetime')
+const billing = ref('monthly')
 const openFaq = ref(null)
 
 const onetimePlans = computed(() => [
@@ -262,7 +296,7 @@ const onetimePlans = computed(() => [
     icon: '⚙️',
     name: t('pricingPage.ot4.name'),
     desc: t('pricingPage.ot4.desc'),
-    price: '180,000+',
+    price: '120,000+',
     highlight: false,
     features: [
       t('pricingPage.ot4.f1'),
@@ -282,6 +316,7 @@ const subscriptionPlans = computed(() => [
     name: t('pricingPage.sub1.name'),
     desc: t('pricingPage.sub1.desc'),
     price: '2,500',
+    priceAnnual: '25,000',
     highlight: false,
     features: [
       t('pricingPage.sub1.f1'),
@@ -296,6 +331,7 @@ const subscriptionPlans = computed(() => [
     name: t('pricingPage.sub2.name'),
     desc: t('pricingPage.sub2.desc'),
     price: '4,500',
+    priceAnnual: '45,000',
     highlight: true,
     features: [
       t('pricingPage.sub2.f1'),
@@ -311,6 +347,7 @@ const subscriptionPlans = computed(() => [
     name: t('pricingPage.sub3.name'),
     desc: t('pricingPage.sub3.desc'),
     price: '8,000',
+    priceAnnual: '80,000',
     highlight: false,
     features: [
       t('pricingPage.sub3.f1'),

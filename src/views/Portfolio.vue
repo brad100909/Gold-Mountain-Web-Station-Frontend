@@ -85,6 +85,16 @@
               {{ tag }}
             </span>
           </div>
+          <button
+            @click="scrollToDemos"
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-[#BFA76A]
+                   hover:text-[#E3D3A3] transition-colors group/btn"
+          >
+            {{ t('portfolioPage.project1.cta') }}
+            <svg class="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -238,6 +248,116 @@
 
     </div>
 
+    <!-- Live Demo Section -->
+    <div id="live-demos" class="max-w-6xl mx-auto mt-20">
+      <div class="text-center mb-10">
+        <p class="text-xs tracking-[0.4em] uppercase text-[#BFA76A] mb-3">Portfolio</p>
+        <h2 class="text-2xl md:text-3xl font-extrabold tracking-wide">
+          <span class="bg-gradient-to-r from-[#BFA76A] via-[#E3D3A3] to-[#A58A4A] bg-clip-text text-transparent">
+            作品展示
+          </span>
+        </h2>
+        <p class="text-gray-400 text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+          各產業完整前端 Demo，點擊即可體驗實際操作感受
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- 日式餐廳 -->
+        <router-link :to="'/' + locale + '/demo/restaurant'"
+          class="group block bg-white/8 backdrop-blur border border-white/15 rounded-2xl overflow-hidden
+                 hover:border-[#BFA76A]/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <div class="h-36 bg-[#0d0d0d] relative overflow-hidden flex items-center justify-center">
+            <div class="absolute inset-0 bg-[url('/japanese_restaurant_demo/restaurant-hero.jpg')] bg-cover bg-center opacity-50"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent"></div>
+            <div class="relative text-center">
+              <div class="text-3xl font-black tracking-widest"
+                style="background: linear-gradient(135deg,#C9A96E,#F0E0B0); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
+                翠山
+              </div>
+              <div class="text-[8px] tracking-[0.4em] text-[#C9A96E]/70 mt-0.5">料理</div>
+            </div>
+          </div>
+          <div class="p-4">
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Restaurant</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">日式懷石料理</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">暗色系高端日式風格，含菜單、Gallery、線上訂位</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
+              查看 Demo →
+            </span>
+          </div>
+        </router-link>
+
+        <!-- 美甲沙龍 -->
+        <router-link :to="'/' + locale + '/demo/nail'"
+          class="group block bg-white/8 backdrop-blur border border-white/15 rounded-2xl overflow-hidden
+                 hover:border-[#BFA76A]/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <div class="h-36 bg-[#FAF8F4] relative overflow-hidden flex items-center justify-center">
+            <div class="absolute inset-0 bg-[url('/nail_shop_demo/close-up_of_almond_shaped_nail_Nano_Banana_2_72966.webp')] bg-cover bg-center opacity-60"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#FAF8F4] via-transparent to-transparent"></div>
+            <div class="relative text-center">
+              <div class="text-2xl font-black tracking-[0.3em] text-[#2C2825]">IVOIRE</div>
+              <div class="text-[8px] tracking-[0.3em] text-[#C4A882] mt-0.5">Nail Studio</div>
+            </div>
+          </div>
+          <div class="p-4">
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Beauty Salon</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">美甲美容沙龍</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">高冷奶油歐系風格，含服務價目、作品集、線上預約</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
+              查看 Demo →
+            </span>
+          </div>
+        </router-link>
+
+        <!-- 健身教練 -->
+        <router-link :to="'/' + locale + '/demo/fitness'"
+          class="group block bg-white/8 backdrop-blur border border-white/15 rounded-2xl overflow-hidden
+                 hover:border-[#BFA76A]/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <div class="h-36 bg-[#080808] relative overflow-hidden flex items-center justify-center">
+            <div class="absolute inset-0 bg-[url('/fitness_demo/_dramatic_gym_interior_heavy_d_Nano_Banana_2_12315.webp')] bg-cover bg-center opacity-40"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent"></div>
+            <div class="relative text-center">
+              <div class="text-2xl font-black tracking-[0.35em] text-white">FORGE</div>
+              <div class="text-[8px] tracking-[0.3em] text-[#E8400C] mt-0.5">Personal Training</div>
+            </div>
+          </div>
+          <div class="p-4">
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Fitness</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">健身教練個人品牌</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">深色強對比橘紅系，含方案定價、學員見證、預約諮詢</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
+              查看 Demo →
+            </span>
+          </div>
+        </router-link>
+
+        <!-- 咖啡廳 -->
+        <router-link :to="'/' + locale + '/demo/cafe'"
+          class="group block bg-white/8 backdrop-blur border border-white/15 rounded-2xl overflow-hidden
+                 hover:border-[#BFA76A]/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <div class="h-36 bg-[#F5EDE0] relative overflow-hidden flex items-center justify-center">
+            <div class="absolute inset-0 bg-[url('/coffe_shop_demo/_cozy_cafe_interior_warm_morni_Nano_Banana_2_50292.webp')] bg-cover bg-center opacity-50"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#F5EDE0] via-transparent to-transparent"></div>
+            <div class="relative text-center">
+              <div class="text-2xl font-black tracking-[0.3em] text-[#2A1F14]">SOLEIL</div>
+              <div class="text-[8px] tracking-[0.3em] text-[#C8804A] mt-0.5">CAFÉ</div>
+            </div>
+          </div>
+          <div class="p-4">
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Café</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">咖啡廳品牌官網</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">溫暖奶油焦糖系，含菜單、甜點展示、品牌故事</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
+              查看 Demo →
+            </span>
+          </div>
+        </router-link>
+
+      </div>
+    </div>
+
     <!-- Back to Home -->
     <div class="text-center mt-16">
       <router-link
@@ -263,6 +383,10 @@ const router = useRouter()
 function goToDemo() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
   router.push({ query: { showDemo: '1' } })
+}
+
+function scrollToDemos() {
+  document.getElementById('live-demos')?.scrollIntoView({ behavior: 'smooth' })
 }
 </script>
 
