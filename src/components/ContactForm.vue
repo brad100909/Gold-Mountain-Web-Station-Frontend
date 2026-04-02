@@ -7,7 +7,7 @@
       <!-- Left: Brand Info -->
       <div class="lg:col-span-2 flex flex-col gap-6">
         <div class="flex items-center gap-3">
-          <img src="/Logo.svg" alt="Golden Mountain Logo" class="h-9 w-auto" />
+          <img src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp" alt="Golden Mountain Logo" class="h-9 w-auto" />
           <span class="text-lg font-bold text-white tracking-wide">Golden Mountain</span>
         </div>
 
@@ -102,6 +102,46 @@
             </div>
           </div>
 
+          <!-- Service + Budget row -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-gray-400 mb-1.5 uppercase tracking-wider">
+                {{ t('contact.form.serviceLabel') }}
+              </label>
+              <select
+                v-model="form.service"
+                class="w-full bg-[#1a1f2e] border border-gray-700/60 text-gray-100 rounded-lg px-4 py-3 text-sm
+                       focus:outline-none focus:border-[#BFA76A]/60 focus:bg-[#1e2436]
+                       transition-colors duration-200 appearance-none cursor-pointer"
+              >
+                <option value="" disabled>{{ t('contact.form.servicePlaceholder') }}</option>
+                <option value="形象網站 / Brand Website">{{ t('contact.form.serviceOpt1') }}</option>
+                <option value="預約系統網站 / Booking Website">{{ t('contact.form.serviceOpt2') }}</option>
+                <option value="電商/系統開發 / E-commerce & System">{{ t('contact.form.serviceOpt3') }}</option>
+                <option value="VPS 主機維護 / VPS Maintenance">{{ t('contact.form.serviceOpt4') }}</option>
+                <option value="其他 / Other">{{ t('contact.form.serviceOpt5') }}</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-400 mb-1.5 uppercase tracking-wider">
+                {{ t('contact.form.budgetLabel') }}
+              </label>
+              <select
+                v-model="form.budget"
+                class="w-full bg-[#1a1f2e] border border-gray-700/60 text-gray-100 rounded-lg px-4 py-3 text-sm
+                       focus:outline-none focus:border-[#BFA76A]/60 focus:bg-[#1e2436]
+                       transition-colors duration-200 appearance-none cursor-pointer"
+              >
+                <option value="" disabled>{{ t('contact.form.budgetPlaceholder') }}</option>
+                <option value="NT$28,000 以下">{{ t('contact.form.budgetOpt1') }}</option>
+                <option value="NT$28,000 – 68,000">{{ t('contact.form.budgetOpt2') }}</option>
+                <option value="NT$68,000 – 120,000">{{ t('contact.form.budgetOpt3') }}</option>
+                <option value="NT$120,000 以上">{{ t('contact.form.budgetOpt4') }}</option>
+                <option value="不確定 / Not Sure">{{ t('contact.form.budgetOpt5') }}</option>
+              </select>
+            </div>
+          </div>
+
           <!-- Message -->
           <div>
             <label class="block text-xs font-medium text-gray-400 mb-1.5 uppercase tracking-wider">
@@ -109,7 +149,7 @@
             </label>
             <textarea
               v-model="form.message"
-              rows="5"
+              rows="4"
               :placeholder="t('contact.form.messagePlaceholder')"
               class="w-full bg-[#1a1f2e] border border-gray-700/60 text-gray-100 rounded-lg px-4 py-3 text-sm
                      focus:outline-none focus:border-[#BFA76A]/60 focus:bg-[#1e2436]
@@ -171,7 +211,7 @@ const { t } = useI18n()
 
 const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
 
-const form = reactive({ name: '', email: '', message: '' })
+const form = reactive({ name: '', email: '', service: '', budget: '', message: '' })
 const loading = ref(false)
 const submitted = ref(false)
 const errorMsg = ref('')
@@ -199,6 +239,8 @@ async function handleSubmit() {
     await axios.post(`${API_URL}/api/contact`, {
       name: form.name.trim(),
       email: form.email.trim(),
+      service: form.service,
+      budget: form.budget,
       message: form.message.trim(),
     })
     submitted.value = true

@@ -68,6 +68,19 @@
     }
   },
 
+  "stats": {
+    "label": "Real Projects",
+    "s1Value": "20+",
+    "s1Label": "Projects Completed",
+    "s2Value": "5+",
+    "s2Label": "Years of Experience",
+    "s3Value": "10+",
+    "s3Label": "Sites Maintained",
+    "s4Value": "1–2",
+    "s4Label": "Business Day Reply",
+    "note": "Numbers as of today, and growing"
+  },
+
   "whyMe": {
     "title": "Why Work With Me?",
     "p1Prefix": "Most websites fail not because they look bad, but because they are",
@@ -89,6 +102,20 @@
       "emailPlaceholder": "your@email.com",
       "messageLabel": "Project details",
       "messagePlaceholder": "Briefly describe your project, budget, or timeline…",
+      "serviceLabel": "What are you looking for?",
+      "servicePlaceholder": "Select a service type",
+      "serviceOpt1": "Brand Website",
+      "serviceOpt2": "Booking System Website",
+      "serviceOpt3": "E-commerce / System Development",
+      "serviceOpt4": "VPS Hosting & Maintenance",
+      "serviceOpt5": "Other / Not Sure",
+      "budgetLabel": "Budget Range",
+      "budgetPlaceholder": "Select a budget",
+      "budgetOpt1": "Under NT$28,000",
+      "budgetOpt2": "NT$28,000 – 68,000",
+      "budgetOpt3": "NT$68,000 – 120,000",
+      "budgetOpt4": "NT$120,000+",
+      "budgetOpt5": "Not Sure",
       "submit": "Send Inquiry",
       "submitting": "Sending…",
       "successTitle": "Message received!",

@@ -3,10 +3,38 @@
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
       <!-- Logo -->
-      <router-link :to="'/' + locale" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-        <img src="/Logo.svg" alt="Gold Mountain Logo" class="h-8 w-auto" />
-        <span class="text-xl font-bold text-gray-800">Golden Mountain {{ t('nav.logoText') }}</span>
-      </router-link>
+      <div class="flex items-center gap-3">
+        <img
+          src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp"
+          alt="Golden Mountain Logo"
+          class="h-12 w-auto cursor-zoom-in hover:opacity-80 transition-opacity"
+          @click="logoModalOpen = true"
+        />
+        <router-link :to="'/' + locale" class="hover:opacity-80 transition-opacity">
+          <span class="text-xl font-bold text-gray-800">Golden Mountain {{ t('nav.logoText') }}</span>
+        </router-link>
+      </div>
+
+      <!-- Logo Modal -->
+      <Teleport to="body">
+        <div
+          v-if="logoModalOpen"
+          class="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          @click="logoModalOpen = false"
+        >
+          <div class="relative" @click.stop>
+            <img
+              src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp"
+              alt="Golden Mountain Logo"
+              class="max-w-[80vw] max-h-[80vh] w-auto h-auto rounded-2xl shadow-2xl"
+            />
+            <button
+              @click="logoModalOpen = false"
+              class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-white text-gray-800 flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors text-sm font-bold"
+            >✕</button>
+          </div>
+        </div>
+      </Teleport>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
@@ -236,6 +264,7 @@ import { useRouter, useRoute } from 'vue-router'
 const menuOpen = ref(false)
 const demoOpen = ref(false)
 const demoPulse = ref(false)
+const logoModalOpen = ref(false)
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value

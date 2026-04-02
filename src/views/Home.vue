@@ -22,7 +22,7 @@
 
         <!-- Brand badge -->
         <div class="observe-item opacity-0 inline-flex items-center gap-2 mb-8 px-5 py-2 rounded-full border border-[#BFA76A]/40 bg-black/25 backdrop-blur-sm">
-          <img src="/Logo.svg" alt="Golden Mountain Logo" class="w-5 h-5" />
+          <img src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp" alt="Golden Mountain Logo" class="w-5 h-5" />
           <span class="text-sm font-medium tracking-[0.2em] text-[#E3D3A3]">
             {{ t('hero.brandName') }}
           </span>
@@ -304,6 +304,41 @@
                       bg-gradient-to-br from-[#BFA76A]/6 to-transparent pointer-events-none"></div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="observe-item opacity-0 rounded-2xl border border-white/10 bg-black/30 backdrop-blur-lg px-8 py-10">
+          <p class="text-center text-sm font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-8">{{ t('stats.label') }}</p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s1Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s1Label') }}</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s2Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s2Label') }}</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s3Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s3Label') }}</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s4Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s4Label') }}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

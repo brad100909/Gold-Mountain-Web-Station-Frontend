@@ -68,6 +68,19 @@
     }
   },
 
+  "stats": {
+    "label": "實際案例",
+    "s1Value": "20+",
+    "s1Label": "完成專案",
+    "s2Value": "5+",
+    "s2Label": "年開發經驗",
+    "s3Value": "10+",
+    "s3Label": "維護中網站",
+    "s4Value": "1–2",
+    "s4Label": "工作天內回覆",
+    "note": "以上為現況數字，持續增加中"
+  },
+
   "whyMe": {
     "title": "為什麼選擇我？",
     "p1Prefix": "多數網站失敗，並不是設計不夠漂亮，而是",
@@ -89,6 +102,20 @@
       "emailPlaceholder": "your@email.com",
       "messageLabel": "需求說明",
       "messagePlaceholder": "簡單描述你的專案需求、預算或時程…",
+      "serviceLabel": "想做什麼？",
+      "servicePlaceholder": "請選擇服務類型",
+      "serviceOpt1": "形象網站",
+      "serviceOpt2": "預約系統網站",
+      "serviceOpt3": "電商 / 系統開發",
+      "serviceOpt4": "VPS 主機維護",
+      "serviceOpt5": "其他 / 不確定",
+      "budgetLabel": "預算範圍",
+      "budgetPlaceholder": "請選擇預算",
+      "budgetOpt1": "NT$28,000 以下",
+      "budgetOpt2": "NT$28,000 – 68,000",
+      "budgetOpt3": "NT$68,000 – 120,000",
+      "budgetOpt4": "NT$120,000 以上",
+      "budgetOpt5": "不確定",
       "submit": "送出需求",
       "submitting": "送出中…",
       "successTitle": "已收到你的訊息！",
