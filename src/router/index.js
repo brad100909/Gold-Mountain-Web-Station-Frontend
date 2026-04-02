@@ -43,6 +43,16 @@ const seoData = {
       description: 'Transparent pricing — one-time or subscription. Starter websites from NT$28,000. Flexible plans for system development and VPS maintenance.'
     }
   },
+  blog: {
+    zh: {
+      title: '部落格 | Golden Mountain 金山網頁設計',
+      description: '分享網頁設計、SEO、系統開發的實用知識，幫助台灣品牌與業者做出更好的決策。'
+    },
+    en: {
+      title: 'Blog | Golden Mountain Web Design',
+      description: 'Practical insights on web design, SEO, and system development for Taiwanese brands and business owners.'
+    }
+  },
   contact: {
     zh: {
       title: '聯絡我們 | Golden Mountain 金山網頁設計',
@@ -101,6 +111,8 @@ const routes = [
       { path: 'demo/nail', name: 'demo-nail', component: () => import('../views/demo/DemoNail.vue') },
       { path: 'demo/fitness', name: 'demo-fitness', component: () => import('../views/demo/DemoFitness.vue') },
       { path: 'demo/cafe', name: 'demo-cafe', component: () => import('../views/demo/DemoCafe.vue') },
+      { path: 'blog', name: 'blog', component: () => import('../views/Blog.vue') },
+      { path: 'blog/:slug', name: 'blog-post', component: () => import('../views/BlogPost.vue') },
       { path: 'contract', name: 'contract', component: () => import('../views/ContractGenerator.vue') },
       { path: 'spec', name: 'spec', component: () => import('../views/SpecGenerator.vue') }
     ]

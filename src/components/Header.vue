@@ -112,6 +112,7 @@
         <router-link class="nav-link" :to="'/' + locale + '/services'">{{ t('nav.services') }}</router-link>
         <router-link class="nav-link" :to="'/' + locale + '/contact'">{{ t('nav.contact') }}</router-link>
         <router-link class="nav-link" :to="'/' + locale + '/pricing'">{{ t('nav.pricing') }}</router-link>
+        <router-link class="nav-link" :to="'/' + locale + '/blog'">{{ locale === 'zh' ? '部落格' : 'Blog' }}</router-link>
 
         <!-- Language Switch -->
         <div class="ml-2 relative flex items-center rounded-full bg-[#F5F2EA] p-1 text-xs">
@@ -227,6 +228,7 @@
         <router-link class="nav-link py-2.5" :to="'/' + locale + '/services'" @click="menuOpen = false">{{ t('nav.services') }}</router-link>
         <router-link class="nav-link py-2.5" :to="'/' + locale + '/contact'" @click="menuOpen = false">{{ t('nav.contact') }}</router-link>
         <router-link class="nav-link py-2.5" :to="'/' + locale + '/pricing'" @click="menuOpen = false">{{ t('nav.pricing') }}</router-link>
+        <router-link class="nav-link py-2.5" :to="'/' + locale + '/blog'" @click="menuOpen = false">{{ locale === 'zh' ? '部落格' : 'Blog' }}</router-link>
 
         <!-- Mobile Language Switch -->
         <div class="pt-3 relative flex items-center rounded-full bg-[#F5F2EA] p-1 text-xs w-fit">
