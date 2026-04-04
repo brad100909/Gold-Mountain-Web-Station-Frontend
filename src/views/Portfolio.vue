@@ -157,8 +157,8 @@
               {{ tag }}
             </span>
           </div>
-          <button
-            @click="goToDemo"
+          <router-link
+            :to="'/' + locale + '/demo/shop'"
             class="inline-flex items-center gap-1.5 text-sm font-medium text-[#BFA76A]
                    hover:text-[#E3D3A3] transition-colors group/btn"
           >
@@ -166,7 +166,7 @@
             <svg class="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </router-link>
         </div>
       </div>
 
@@ -233,8 +233,8 @@
               {{ tag }}
             </span>
           </div>
-          <button
-            @click="goToDemo"
+          <router-link
+            :to="'/' + locale + '/demo/admin'"
             class="inline-flex items-center gap-1.5 text-sm font-medium text-[#BFA76A]
                    hover:text-[#E3D3A3] transition-colors group/btn"
           >
@@ -242,7 +242,7 @@
             <svg class="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </router-link>
         </div>
       </div>
 
@@ -375,16 +375,8 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { useRouter } from 'vue-router'
 
 const { t, locale } = useI18n()
-const router = useRouter()
-
-function goToDemo() {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-  router.push({ query: { showDemo: '1' } })
-}
-
 function scrollToDemos() {
   document.getElementById('live-demos')?.scrollIntoView({ behavior: 'smooth' })
 }
