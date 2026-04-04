@@ -321,12 +321,12 @@
 
     "sub1": {
       "name": "Maintenance",
-      "desc": "Essential upkeep to keep your site running smoothly",
-      "f1": "VPS server management and monitoring",
-      "f2": "SSL certificate auto-renewal",
-      "f3": "Daily backups",
-      "f4": "Monthly maintenance report",
-      "note": "Best for: Clients with an existing site who just need reliable server management"
+      "desc": "Keep your site online and problems handled — without touching a thing",
+      "f1": "24/7 server monitoring — issues caught and fixed before you notice",
+      "f2": "SSL auto-renewal, so your site never shows \"Not Secure\" to visitors",
+      "f3": "Daily backups — restore your site to any point if anything goes wrong",
+      "f4": "Monthly report so you always know your site is in good hands",
+      "note": "Best for: Business owners who want zero technical headaches"
     },
     "sub2": {
       "name": "Growth",
@@ -356,7 +356,7 @@
     "faq2q": "Can I cancel my subscription anytime?",
     "faq2a": "Yes. There is no minimum contract period. Just give one month's notice and I'll cancel it. Unused dev hours are settled within the current month and do not carry over.",
     "faq3q": "Does the one-time plan include hosting?",
-    "faq3a": "No, hosting is billed separately based on server specs (typically NT$300–800/month). You can pair it with a subscription maintenance plan if you'd like it handled together.",
+    "faq3a": "No, hosting is billed separately. When self-managed, the real cost typically runs NT$1,000–3,000/month once you factor in domain, backups, monitoring, and the occasional emergency fix. With our maintenance plan, everything is handled under one roof — no logins, no settings, no stress.",
     "faq4q": "Can I add a subscription plan after my site launches?",
     "faq4a": "Absolutely. Many clients complete a one-time website build first, then add a subscription plan once the site is stable. Both options are fully independent."
   },
