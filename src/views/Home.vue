@@ -88,6 +88,40 @@
       </div>
     </section>
 
+    <!-- ===== Stats (Hero 下方第一屏) ===== -->
+    <section class="py-10 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="observe-item opacity-0 rounded-2xl border border-white/10 bg-black/30 backdrop-blur-lg px-8 py-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s1Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s1Label') }}</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s2Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s2Label') }}</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s3Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s3Label') }}</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
+                {{ t('stats.s4Value') }}
+              </div>
+              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s4Label') }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Portfolio ===== -->
     <section id="portfolio" class="py-24 px-6 text-center">
       <div class="observe-item opacity-0 mb-12">
@@ -120,9 +154,9 @@
           </div>
           <div class="p-4">
             <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Restaurant</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">日式懷石料理</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">暗色系高端日式風格，含菜單、Gallery、線上訂位</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">查看 Demo →</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.demo1Title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolio.demo1Desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.viewDemo') }}</span>
           </div>
         </router-link>
 
@@ -140,9 +174,9 @@
           </div>
           <div class="p-4">
             <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Beauty Salon</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">美甲美容沙龍</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">高冷奶油歐系風格，含服務價目、作品集、線上預約</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">查看 Demo →</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.demo2Title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolio.demo2Desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.viewDemo') }}</span>
           </div>
         </router-link>
 
@@ -160,9 +194,9 @@
           </div>
           <div class="p-4">
             <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Fitness</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">健身教練個人品牌</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">深色強對比橘紅系，含方案定價、學員見證、預約諮詢</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">查看 Demo →</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.demo3Title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolio.demo3Desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.viewDemo') }}</span>
           </div>
         </router-link>
 
@@ -180,9 +214,9 @@
           </div>
           <div class="p-4">
             <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Café</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">咖啡廳品牌官網</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">溫暖奶油焦糖系，含菜單、甜點展示、品牌故事</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">查看 Demo →</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.demo4Title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolio.demo4Desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolio.viewDemo') }}</span>
           </div>
         </router-link>
 
@@ -194,7 +228,7 @@
           :to="'/' + locale + '/portfolio'"
           class="inline-flex items-center gap-2 text-sm font-medium text-[#BFA76A] hover:text-[#E3D3A3] transition-colors group"
         >
-          查看完整作品集
+          {{ t('portfolio.viewAll') }}
           <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
@@ -253,7 +287,7 @@
           <!-- Popular badge -->
           <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold
                       bg-gradient-to-r from-[#BFA76A] to-[#A58A4A] text-[#1a1000] whitespace-nowrap tracking-wide">
-            最受歡迎
+            {{ t('services.popularBadge') }}
           </div>
           <!-- Icon: Code Bracket -->
           <div class="mb-5 w-11 h-11 rounded-xl bg-[#BFA76A]/20 border border-[#BFA76A]/50 flex items-center justify-center">
@@ -307,82 +341,110 @@
       </div>
     </section>
 
-    <!-- ===== Stats ===== -->
-    <section class="py-16 px-6">
-      <div class="max-w-4xl mx-auto">
-        <div class="observe-item opacity-0 rounded-2xl border border-white/10 bg-black/30 backdrop-blur-lg px-8 py-10">
-          <p class="text-center text-sm font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-8">{{ t('stats.label') }}</p>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
-                {{ t('stats.s1Value') }}
-              </div>
-              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s1Label') }}</div>
-            </div>
-            <div>
-              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
-                {{ t('stats.s2Value') }}
-              </div>
-              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s2Label') }}</div>
-            </div>
-            <div>
-              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
-                {{ t('stats.s3Value') }}
-              </div>
-              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s3Label') }}</div>
-            </div>
-            <div>
-              <div class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#BFA76A] to-[#E3D3A3] bg-clip-text text-transparent mb-1">
-                {{ t('stats.s4Value') }}
-              </div>
-              <div class="text-white/55 text-xs tracking-wide">{{ t('stats.s4Label') }}</div>
-            </div>
+    <!-- ===== AI Section ===== -->
+    <section class="py-20 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="observe-item opacity-0 text-center mb-12">
+          <p class="text-xs font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-3">{{ t('aiSection.eyebrow') }}</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">{{ t('aiSection.title') }}</h2>
+          <p class="text-white/55 text-sm max-w-xl mx-auto">{{ t('aiSection.subtitle') }}</p>
+        </div>
+
+        <div class="observe-item opacity-0 grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+          <div v-for="item in aiItems" :key="item.title"
+            class="p-7 rounded-2xl border border-[#BFA76A]/30 bg-black/30 backdrop-blur-lg">
+            <div class="text-3xl mb-4">{{ item.icon }}</div>
+            <h3 class="text-[#E3D3A3] font-bold text-sm mb-3">{{ item.title }}</h3>
+            <p class="text-white/75 text-xs leading-relaxed">{{ item.desc }}</p>
           </div>
+        </div>
+
+        <div class="observe-item opacity-0 text-center">
+          <p class="text-white/35 text-xs mb-5">{{ t('aiSection.note') }}</p>
+          <a href="#contact"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-[#BFA76A] hover:text-[#E3D3A3] transition-colors group">
+            {{ t('aiSection.cta') }}
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== Why Me ===== -->
+    <!-- ===== Why Me (Case Stories) ===== -->
     <section class="py-20 px-6">
-      <div class="max-w-3xl mx-auto">
-        <div
-          class="observe-item opacity-0 relative p-10 md:p-12 rounded-3xl overflow-hidden
-                 border border-white/10 bg-black/30 backdrop-blur-lg"
-        >
-          <!-- Decorative blobs -->
-          <div class="absolute -top-10 -right-10 w-48 h-48 bg-[#BFA76A]/8 rounded-full blur-3xl pointer-events-none"></div>
-          <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-[#BFA76A]/6 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="max-w-5xl mx-auto">
+        <div class="observe-item opacity-0 text-center mb-12">
+          <p class="text-xs font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-3">{{ t('whyMe.eyebrow') }}</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white">{{ t('whyMe.title') }}</h2>
+        </div>
 
-          <div class="relative z-10">
-            <p class="text-xs font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-4">Why Choose Me</p>
-            <h2 class="text-xl md:text-2xl font-bold text-white mb-8 tracking-wide">
-              {{ t('whyMe.title') }}
-            </h2>
+        <div class="observe-item opacity-0 grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            <div class="space-y-5 text-white/65 text-sm md:text-base leading-relaxed">
-              <p>
-                {{ t('whyMe.p1Prefix') }}
-                <strong class="text-[#E3D3A3] font-semibold">{{ t('whyMe.p1Strong') }}</strong>。
-              </p>
-              <p>{{ t('whyMe.p2') }}</p>
-              <p>
-                {{ t('whyMe.p3Line1') }}<br />
-                <span class="text-white/85">{{ t('whyMe.p3Line2') }}</span>
-              </p>
+          <!-- Case 1 -->
+          <div class="flex flex-col rounded-2xl border border-white/10 bg-black/30 backdrop-blur-lg overflow-hidden">
+            <div class="px-6 pt-6 pb-4 border-b border-white/8">
+              <span class="text-[9px] tracking-widest uppercase text-[#BFA76A] font-bold">{{ t('whyMe.case1Tag') }}</span>
+              <div class="mt-3 flex items-start gap-2">
+                <span class="mt-0.5 text-red-400/80 text-xs font-bold shrink-0">✗</span>
+                <p class="text-white/50 text-xs leading-relaxed">{{ t('whyMe.case1Problem') }}</p>
+              </div>
             </div>
-
-            <div class="mt-10 pt-6 border-t border-white/10">
-              <a
-                href="#contact"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-[#BFA76A] hover:text-[#E3D3A3] transition-colors group"
-              >
-                {{ t('whyMe.cta') }}
-                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
+            <div class="px-6 py-5 flex-1 flex flex-col justify-between">
+              <div class="flex items-start gap-2">
+                <span class="mt-0.5 text-[#BFA76A] text-xs font-bold shrink-0">✓</span>
+                <p class="text-white/80 text-xs leading-relaxed">{{ t('whyMe.case1Result') }}</p>
+              </div>
             </div>
           </div>
+
+          <!-- Case 2 -->
+          <div class="flex flex-col rounded-2xl border border-[#BFA76A]/35 bg-black/35 backdrop-blur-lg overflow-hidden shadow-lg shadow-[#BFA76A]/8">
+            <div class="px-6 pt-6 pb-4 border-b border-white/8">
+              <span class="text-[9px] tracking-widest uppercase text-[#BFA76A] font-bold">{{ t('whyMe.case2Tag') }}</span>
+              <div class="mt-3 flex items-start gap-2">
+                <span class="mt-0.5 text-red-400/80 text-xs font-bold shrink-0">✗</span>
+                <p class="text-white/50 text-xs leading-relaxed">{{ t('whyMe.case2Problem') }}</p>
+              </div>
+            </div>
+            <div class="px-6 py-5 flex-1 flex flex-col justify-between">
+              <div class="flex items-start gap-2">
+                <span class="mt-0.5 text-[#BFA76A] text-xs font-bold shrink-0">✓</span>
+                <p class="text-white/80 text-xs leading-relaxed">{{ t('whyMe.case2Result') }}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="flex flex-col rounded-2xl border border-white/10 bg-black/30 backdrop-blur-lg overflow-hidden">
+            <div class="px-6 pt-6 pb-4 border-b border-white/8">
+              <span class="text-[9px] tracking-widests uppercase text-[#BFA76A] font-bold">{{ t('whyMe.case3Tag') }}</span>
+              <div class="mt-3 flex items-start gap-2">
+                <span class="mt-0.5 text-red-400/80 text-xs font-bold shrink-0">✗</span>
+                <p class="text-white/50 text-xs leading-relaxed">{{ t('whyMe.case3Problem') }}</p>
+              </div>
+            </div>
+            <div class="px-6 py-5 flex-1 flex flex-col justify-between">
+              <div class="flex items-start gap-2">
+                <span class="mt-0.5 text-[#BFA76A] text-xs font-bold shrink-0">✓</span>
+                <p class="text-white/80 text-xs leading-relaxed">{{ t('whyMe.case3Result') }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="observe-item opacity-0 mt-10 text-center">
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-[#BFA76A] hover:text-[#E3D3A3] transition-colors group"
+          >
+            {{ t('whyMe.cta') }}
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -401,6 +463,13 @@ import { useI18n } from 'vue-i18n'
 import ContactForm from '../components/ContactForm.vue'
 
 const { t, locale } = useI18n()
+
+const aiItems = computed(() => [
+  { icon: t('aiSection.item1Icon'), title: t('aiSection.item1Title'), desc: t('aiSection.item1Desc') },
+  { icon: t('aiSection.item2Icon'), title: t('aiSection.item2Title'), desc: t('aiSection.item2Desc') },
+  { icon: t('aiSection.item3Icon'), title: t('aiSection.item3Title'), desc: t('aiSection.item3Desc') },
+  { icon: t('aiSection.item4Icon'), title: t('aiSection.item4Title'), desc: t('aiSection.item4Desc') },
+])
 
 const heroTags = computed(() => [
   t('hero.tag1'),

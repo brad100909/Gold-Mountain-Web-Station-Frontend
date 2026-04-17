@@ -152,6 +152,7 @@ const serviceItems = computed(() => [
       t('servicesPage.svc2.f2'),
       t('servicesPage.svc2.f3'),
       t('servicesPage.svc2.f4'),
+      t('servicesPage.svc2.f5'),
     ],
     note: t('servicesPage.svc2.note'),
   },

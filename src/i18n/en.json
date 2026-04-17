@@ -28,11 +28,11 @@
     "descLine3": "For brands that want long-term growth without managing the tech themselves",
     "brandName": "Golden Mountain Web Design",
     "ctaPortfolio": "View Portfolio",
-    "ctaContact": "Free Project Consultation",
-    "tag1": "🌐 Brand Websites",
-    "tag2": "🛒 E-Commerce Development",
-    "tag3": "👥 Membership & Admin Systems",
-    "tag4": "🖥️ VPS Hosting & Maintenance",
+    "ctaContact": "Free Consultation",
+    "tag1": "📅 Booking automation — no more LINE scheduling",
+    "tag2": "🔍 Get found on Google Search",
+    "tag3": "💬 Turn browsers into paying clients",
+    "tag4": "🛠️ Ongoing support after launch",
     "tag5": "🌏 Bilingual (ZH / EN)"
   },
 
@@ -40,11 +40,22 @@
     "title": "Project & System Interface Showcase",
     "line1": "Below are examples of real-world projects and system interface concepts I’ve developed,",
     "line2": "including corporate websites, admin dashboards, and membership workflows.",
-    "line3": "Interactive demo systems can be provided based on your specific requirements."
+    "line3": "Interactive demo systems can be provided based on your specific requirements.",
+    "viewAll": "View Full Portfolio",
+    "viewDemo": "View Demo →",
+    "demo1Title": "Japanese Kaiseki Restaurant",
+    "demo1Desc": "Dark high-end Japanese aesthetic — menu, gallery, online reservations",
+    "demo2Title": "Nail & Beauty Salon",
+    "demo2Desc": "Cool cream European style — service menu, portfolio, online booking",
+    "demo3Title": "Personal Training Brand",
+    "demo3Desc": "High-contrast dark orange — pricing plans, testimonials, consultation booking",
+    "demo4Title": "Café Brand Website",
+    "demo4Desc": "Warm caramel tones — menu, dessert showcase, brand story"
   },
 
   "services": {
     "title": "Services",
+    "popularBadge": "Most Popular",
 
     "service1": {
       "title": "Custom Brand Websites",
@@ -81,14 +92,45 @@
     "note": "Numbers as of today, and growing"
   },
 
+  "aiSection": {
+    "eyebrow": "AI Add-On",
+    "title": "Let AI handle inquiries while you focus on what matters",
+    "subtitle": "Not a gimmick — fewer missed messages, fewer lost clients",
+    "item1Icon": "💬",
+    "item1Title": "24/7 auto-reply to inquiries",
+    "item1Desc": "Clients ask about pricing or availability after hours, on weekends, late at night — and most businesses don't reply until the next day. By then, they've already messaged someone else. AI responds instantly, answers common questions, gives ballpark pricing, and guides clients toward booking — so no inquiry goes to waste while you're offline.",
+    "item2Icon": "📋",
+    "item2Title": "Auto-organise client data",
+    "item2Desc": "Inquiries from LINE, forms, and Instagram are scattered everywhere and easy to miss. The system pulls everything into one place automatically — sorted by service type, intent level, and whether they're new or returning clients. No more relying on memory to keep track of who asked what.",
+    "item3Icon": "🔄",
+    "item3Title": "Fewer lost leads, higher conversion",
+    "item3Desc": "Most inquiries go cold not because clients changed their minds, but because follow-up was slow or never happened. AI automatically follows up after an inquiry, reminds clients who didn't complete a booking, and keeps warm leads from slipping away — so more of the people who reach out actually end up paying.",
+    "item4Icon": "✍️",
+    "item4Title": "Repetitive documents, written automatically",
+    "item4Desc": "Real estate agents writing outreach letters, sales reps filling in quotes, consultants drafting proposals — same structure every time, just different details. Enter the client's basic info and AI produces a complete, professional document in seconds. Spend your time on the conversations that matter, not on copy-pasting.",
+    "note": "AI automation is an optional add-on — available with any plan",
+    "cta": "Ask about AI add-ons"
+  },
+
   "whyMe": {
-    "title": "Why Work With Me?",
-    "p1Prefix": "Most websites fail not because they look bad, but because they are",
-    "p1Strong": "impossible to extend, poorly maintained, and expensive to fix later",
-    "p2": "I design websites and systems with a simple question in mind: will this still work well three years from now?",
-    "p3Line1": "If you’re only looking for the fastest and cheapest template, I may not be the right choice.",
-    "p3Line2": "But if you want a technical partner who grows with your business, I’m someone you can rely on.",
-    "cta": "Contact me to discuss your project"
+    "eyebrow": "Real Scenarios",
+    "title": "What typically happens after launch",
+    "case1Before": "The problem",
+    "case1Problem": "Spending time every day scheduling via messaging apps — still replying to clients after hours, missing bookings in the process",
+    "case1After": "After launch",
+    "case1Result": "Clients pick their own time slot and get automatic reminders — bookings come in even when you’re offline, no-shows drop noticeably",
+    "case1Tag": "Booking System Website",
+    "case2Before": "The problem",
+    "case2Problem": "The website launched, but new clients still come through referrals only. Google doesn’t surface it, and the site just sits there looking nice",
+    "case2After": "After launch",
+    "case2Result": "With SEO adjustments and result-focused copy, the site starts generating inbound inquiries from search — not just a digital business card",
+    "case2Tag": "Brand Website",
+    "case3Before": "The problem",
+    "case3Problem": "After launch, no one to call when something breaks. Changes take weeks, or you end up figuring it out yourself",
+    "case3After": "After launch",
+    "case3Result": "Ongoing maintenance partnership with a dedicated contact. No technical knowledge required — just send a message and it gets handled",
+    "case3Tag": "Long-Term Maintenance",
+    "cta": "Talk about your project"
   },
 
   "contact": {
@@ -259,8 +301,8 @@
 
   "pricingPage": {
     "eyebrow": "Golden Mountain Pricing",
-    "title": "Transparent Pricing, Find Your Plan",
-    "subtitle": "One-time payment or monthly subscription — choose the model that fits your stage and needs.",
+    "title": "Is your website actually bringing in clients?",
+    "subtitle": "Traffic, decent design, but still not enough inquiries — the problem usually isn't how it looks, it's conversion. Every plan below is built with that in mind.",
     "tabOnetime": "One-Time",
     "tabSubscription": "Subscription",
     "popular": "Most Popular",
@@ -273,8 +315,45 @@
     "annualSave": "Save 2 months",
     "annualNote": "Billed annually — equivalent to 2 months free",
     "cta": "Get in Touch",
+    "ctaOt1": "Learn more — free assessment",
+    "ctaOt2": "Automate my bookings",
+    "ctaOt3": "Discuss my needs",
+    "ctaOt4": "Talk about system requirements",
     "customNote": "Not sure which to choose? The Starter site focuses on brand presence; the Booking site focuses on your intake flow — if you take appointments, go with that. All prices are base estimates, feel free to chat first.",
     "subscriptionNote": "Subscription plans assume you already have a website. If not, start with a one-time plan first.",
+
+    "entryOffer": "Free diagnosis: I'll show you exactly why people visit your site but don't reach out",
+    "entryOfferCta": "Book a free diagnosis",
+
+    "painLabel": "Sound familiar?",
+    "pain1Icon": "📱",
+    "pain1Title": "Scheduling through messaging apps all day",
+    "pain1Desc": "Clients ask 'when are you free?' — you check your calendar, reply, confirm, remind. Time gone.",
+    "pain2Icon": "🔍",
+    "pain2Title": "Instagram but no website",
+    "pain2Desc": "When someone asks 'do you have a website?' and you send an IG link — you've already lost half the credibility.",
+    "pain3Icon": "💸",
+    "pain3Title": "Built a website, still no inquiries",
+    "pain3Desc": "The site is live. New clients still come through word of mouth. The website is just decoration.",
+
+    "proofLabel": "What typically changes after launch",
+    "proof1Icon": "📅",
+    "proof1Title": "Appointment-based businesses",
+    "proof1Desc": "Online booking goes live — the 'when are you free?' messages drop significantly. Clients book themselves, automatic reminders reduce no-shows.",
+    "proof1Tag": "Nails · Fitness · Clinics · Studios",
+    "proof2Icon": "🌐",
+    "proof2Title": "Brand websites",
+    "proof2Desc": "With a real website, conversations with potential clients go smoother. Google surfaces you, people reach out proactively — not just from referrals.",
+    "proof2Tag": "Design · Consulting · Service Brands",
+    "proof3Icon": "⚙️",
+    "proof3Title": "Systemised workflows",
+    "proof3Desc": "Time spent manually managing orders and members gets back to you. One dashboard instead of checking five chat groups.",
+    "proof3Tag": "E-commerce · Bookings · Memberships",
+
+    "finalCtaTitle": "Not sure where to start?",
+    "finalCtaDesc": "Free 15-minute chat — I'll tell you what your current site is missing, then you decide whether to move forward. No pitch, no pressure.",
+    "finalCtaBtn": "Book a free 15-min diagnosis",
+    "finalCtaSecondary": "Or fill in the contact form",
 
     "ot1": {
       "name": "Starter Website",
@@ -289,6 +368,7 @@
     "ot2": {
       "name": "Smart Booking Website",
       "desc": "Tired of spending hours on LINE scheduling? Let clients book themselves — automatically.",
+      "aiTag": "AI add-on: auto-reply to booking inquiries and handle scheduling — clients don't need to wait for you to be online",
       "f1": "24/7 online booking — no more waiting to reply to messages",
       "f2": "Auto confirmation + day-before reminder to reduce no-shows",
       "f3": "Mobile-first: clients book in 30 seconds from your IG link",
@@ -299,6 +379,7 @@
     "ot3": {
       "name": "Business Website",
       "desc": "For SMEs, service providers, and brand websites",
+      "aiTag": "AI add-on: auto-reply to inquiries, classify leads by intent, and follow up with prospects who didn't respond",
       "f1": "Multi-page website (no page limit)",
       "f2": "Responsive design + scroll animations",
       "f3": "Contact form, AI chat integration",
@@ -310,6 +391,7 @@
     "ot4": {
       "name": "System / E-commerce",
       "desc": "For businesses needing admin, membership, or payment flows",
+      "aiTag": "AI add-on: automate order notifications, client classification, and business document generation — eliminate repetitive manual work entirely",
       "f1": "Full-stack development (Vue 3 + Laravel)",
       "f2": "Membership system and order flow design",
       "f3": "Payment gateway integration (Newebpay / ECPay)",
@@ -391,6 +473,7 @@
       "f2": "Order workflows and payment gateway integration",
       "f3": "Admin dashboard: products, orders, analytics reports",
       "f4": "Third-party API integrations (LINE, logistics, ERP, etc.)",
+      "f5": "Optional AI auto-reply — automate the inquiry → reply → booking flow so nothing falls through the cracks",
       "note": "Best for: Growing businesses that need data management and workflow automation"
     },
 

@@ -8,8 +8,26 @@
 
   <div class="min-h-screen relative z-10 pt-24 pb-20 px-6">
 
+    <!-- Entry Offer Banner -->
+    <div class="max-w-3xl mx-auto mb-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 px-6 py-4 rounded-2xl
+                  border border-[#BFA76A]/50 bg-[#BFA76A]/10 backdrop-blur-sm">
+        <p class="text-sm text-[#E3D3A3] leading-relaxed text-center sm:text-left">
+          {{ t('pricingPage.entryOffer') }}
+        </p>
+        <router-link
+          :to="'/' + locale + '/contact'"
+          class="shrink-0 px-5 py-2.5 rounded-full text-sm font-semibold tracking-wide
+                 bg-gradient-to-r from-[#BFA76A] to-[#A58A4A] text-[#1a1000]
+                 hover:brightness-110 transition-all whitespace-nowrap"
+        >
+          {{ t('pricingPage.entryOfferCta') }}
+        </router-link>
+      </div>
+    </div>
+
     <!-- Hero -->
-    <div class="text-center mb-16">
+    <div class="text-center mb-14">
       <p class="text-xs tracking-[0.3em] uppercase text-[#BFA76A] mb-3">
         {{ t('pricingPage.eyebrow') }}
       </p>
@@ -21,6 +39,21 @@
       <p class="text-gray-200 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
         {{ t('pricingPage.subtitle') }}
       </p>
+    </div>
+
+    <!-- Pain Points -->
+    <div class="max-w-4xl mx-auto mb-16">
+      <p class="text-center text-xs font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-8">
+        {{ t('pricingPage.painLabel') }}
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div v-for="pain in painPoints" :key="pain.title"
+          class="p-6 rounded-2xl border border-white/10 bg-black/25 backdrop-blur-sm">
+          <div class="text-2xl mb-3">{{ pain.icon }}</div>
+          <h3 class="text-white font-semibold text-sm mb-2">{{ pain.title }}</h3>
+          <p class="text-white/55 text-xs leading-relaxed">{{ pain.desc }}</p>
+        </div>
+      </div>
     </div>
 
     <!-- Toggle -->
@@ -85,8 +118,16 @@
           </ul>
 
           <!-- Note -->
-          <div class="text-xs text-gray-400 border-t border-white/10 pt-4 mb-5">
+          <div class="text-xs text-gray-400 border-t border-white/10 pt-4 mb-3">
             {{ plan.note }}
+          </div>
+
+          <!-- AI tag (ot2 only) -->
+          <div v-if="plan.aiTag" class="mb-5">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-semibold tracking-wide
+                         bg-[#BFA76A]/15 border border-[#BFA76A]/40 text-[#E3D3A3]">
+              🤖 {{ plan.aiTag }}
+            </span>
           </div>
 
           <!-- CTA -->
@@ -97,7 +138,7 @@
               ? 'bg-[#BFA76A] text-gray-900 hover:bg-[#CDB87A]'
               : 'border border-white/30 text-white hover:bg-white/10'"
           >
-            {{ t('pricingPage.cta') }}
+            {{ plan.cta }}
           </router-link>
         </div>
       </div>
@@ -204,6 +245,50 @@
       </p>
     </div>
 
+    <!-- AI Section -->
+    <div class="max-w-4xl mx-auto mt-20">
+      <div class="rounded-2xl border border-[#BFA76A]/30 bg-[#BFA76A]/5 backdrop-blur-sm p-10">
+        <div class="text-center mb-10">
+          <p class="text-xs font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-3">{{ t('aiSection.eyebrow') }}</p>
+          <h2 class="text-2xl font-bold text-white mb-3">{{ t('aiSection.title') }}</h2>
+          <p class="text-white/55 text-sm max-w-xl mx-auto">{{ t('aiSection.subtitle') }}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+          <div v-for="item in aiItems" :key="item.title" class="p-5 rounded-xl border border-[#BFA76A]/30 bg-black/35">
+            <div class="text-2xl mb-3">{{ item.icon }}</div>
+            <h3 class="text-[#E3D3A3] font-bold text-sm mb-2">{{ item.title }}</h3>
+            <p class="text-white/80 text-xs leading-relaxed">{{ item.desc }}</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="text-white/35 text-xs mb-4">{{ t('aiSection.note') }}</p>
+          <router-link :to="'/' + locale + '/contact'"
+            class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold
+                   border border-[#BFA76A]/50 text-[#BFA76A] hover:bg-[#BFA76A]/10 transition-all">
+            {{ t('aiSection.cta') }}
+          </router-link>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proof / Outcomes -->
+    <div class="max-w-4xl mx-auto mt-20 mb-20">
+      <p class="text-center text-xs font-bold tracking-[0.35em] text-[#BFA76A] uppercase mb-8">
+        {{ t('pricingPage.proofLabel') }}
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div v-for="proof in proofItems" :key="proof.title"
+          class="p-6 rounded-2xl border border-white/10 bg-black/25 backdrop-blur-sm flex flex-col gap-3">
+          <div class="text-2xl">{{ proof.icon }}</div>
+          <h3 class="text-[#E3D3A3] font-bold text-sm">{{ proof.title }}</h3>
+          <p class="text-white/65 text-xs leading-relaxed flex-1">{{ proof.desc }}</p>
+          <span class="text-[10px] tracking-widest text-[#BFA76A]/70 uppercase border border-[#BFA76A]/25 rounded-full px-3 py-1 self-start">
+            {{ proof.tag }}
+          </span>
+        </div>
+      </div>
+    </div>
+
     <!-- FAQ -->
     <div class="max-w-2xl mx-auto mt-20">
       <h2 class="text-center text-white font-bold text-xl mb-8 tracking-wide">{{ t('pricingPage.faqTitle') }}</h2>
@@ -232,6 +317,28 @@
       </div>
     </div>
 
+    <!-- Final CTA -->
+    <div class="max-w-2xl mx-auto mt-16">
+      <div class="relative p-10 rounded-3xl overflow-hidden border border-[#BFA76A]/30 bg-black/30 backdrop-blur-lg text-center">
+        <div class="absolute -top-12 -right-12 w-48 h-48 bg-[#BFA76A]/8 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-[#BFA76A]/6 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold text-white mb-3">{{ t('pricingPage.finalCtaTitle') }}</h2>
+          <p class="text-white/60 text-sm leading-relaxed mb-8 max-w-lg mx-auto">{{ t('pricingPage.finalCtaDesc') }}</p>
+          <div class="flex justify-center">
+            <router-link
+              :to="'/' + locale + '/contact'"
+              class="px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide transition-all
+                     bg-gradient-to-r from-[#BFA76A] to-[#A58A4A] text-[#1a1000]
+                     hover:brightness-110 hover:scale-105 shadow-lg shadow-[#BFA76A]/25"
+            >
+              {{ t('pricingPage.finalCtaBtn') }}
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -245,6 +352,25 @@ const tab = ref('onetime')
 const billing = ref('monthly')
 const openFaq = ref(null)
 
+const aiItems = computed(() => [
+  { icon: t('aiSection.item1Icon'), title: t('aiSection.item1Title'), desc: t('aiSection.item1Desc') },
+  { icon: t('aiSection.item2Icon'), title: t('aiSection.item2Title'), desc: t('aiSection.item2Desc') },
+  { icon: t('aiSection.item3Icon'), title: t('aiSection.item3Title'), desc: t('aiSection.item3Desc') },
+  { icon: t('aiSection.item4Icon'), title: t('aiSection.item4Title'), desc: t('aiSection.item4Desc') },
+])
+
+const painPoints = computed(() => [
+  { icon: t('pricingPage.pain1Icon'), title: t('pricingPage.pain1Title'), desc: t('pricingPage.pain1Desc') },
+  { icon: t('pricingPage.pain2Icon'), title: t('pricingPage.pain2Title'), desc: t('pricingPage.pain2Desc') },
+  { icon: t('pricingPage.pain3Icon'), title: t('pricingPage.pain3Title'), desc: t('pricingPage.pain3Desc') },
+])
+
+const proofItems = computed(() => [
+  { icon: t('pricingPage.proof1Icon'), title: t('pricingPage.proof1Title'), desc: t('pricingPage.proof1Desc'), tag: t('pricingPage.proof1Tag') },
+  { icon: t('pricingPage.proof2Icon'), title: t('pricingPage.proof2Title'), desc: t('pricingPage.proof2Desc'), tag: t('pricingPage.proof2Tag') },
+  { icon: t('pricingPage.proof3Icon'), title: t('pricingPage.proof3Title'), desc: t('pricingPage.proof3Desc'), tag: t('pricingPage.proof3Tag') },
+])
+
 const onetimePlans = computed(() => [
   {
     icon: '🌱',
@@ -252,6 +378,7 @@ const onetimePlans = computed(() => [
     desc: t('pricingPage.ot1.desc'),
     price: '28,000+',
     highlight: false,
+    cta: t('pricingPage.ctaOt1'),
     features: [
       t('pricingPage.ot1.f1'),
       t('pricingPage.ot1.f2'),
@@ -267,6 +394,8 @@ const onetimePlans = computed(() => [
     desc: t('pricingPage.ot2.desc'),
     price: '45,000+',
     highlight: true,
+    cta: t('pricingPage.ctaOt2'),
+    aiTag: t('pricingPage.ot2.aiTag'),
     features: [
       t('pricingPage.ot2.f1'),
       t('pricingPage.ot2.f2'),
@@ -282,6 +411,8 @@ const onetimePlans = computed(() => [
     desc: t('pricingPage.ot3.desc'),
     price: '68,000+',
     highlight: false,
+    cta: t('pricingPage.ctaOt3'),
+    aiTag: t('pricingPage.ot3.aiTag'),
     features: [
       t('pricingPage.ot3.f1'),
       t('pricingPage.ot3.f2'),
@@ -298,6 +429,8 @@ const onetimePlans = computed(() => [
     desc: t('pricingPage.ot4.desc'),
     price: '120,000+',
     highlight: false,
+    cta: t('pricingPage.ctaOt4'),
+    aiTag: t('pricingPage.ot4.aiTag'),
     features: [
       t('pricingPage.ot4.f1'),
       t('pricingPage.ot4.f2'),
