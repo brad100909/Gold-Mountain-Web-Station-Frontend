@@ -298,7 +298,17 @@
       "desc": "會員資料管理、權限分級、操作紀錄與數據圖表，系統架構從一開始即考慮可擴充性與長期維護。",
       "cta": "查看示範頁面"
     },
-    "backHome": "返回首頁"
+    "backHome": "返回首頁",
+    "liveDemo": {
+      "eyebrow": "Portfolio",
+      "title": "作品展示",
+      "subtitle": "各產業完整前端 Demo，點擊即可體驗實際操作感受",
+      "cta": "查看 Demo →",
+      "restaurant": { "category": "Restaurant", "title": "日式懷石料理", "desc": "暗色系高端日式風格，含菜單、Gallery、線上訂位" },
+      "nail": { "category": "Beauty Salon", "title": "美甲美容沙龍", "desc": "高冷奶油歐系風格，含服務價目、作品集、線上預約" },
+      "fitness": { "category": "Fitness", "title": "健身教練個人品牌", "desc": "深色強對比橘紅系，含方案定價、學員見證、預約諮詢" },
+      "cafe": { "category": "Café", "title": "咖啡廳品牌官網", "desc": "溫暖奶油焦糖系，含菜單、甜點展示、品牌故事" }
+    }
   },
 
   "pricingPage": {

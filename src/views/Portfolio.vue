@@ -251,14 +251,14 @@
     <!-- Live Demo Section -->
     <div id="live-demos" class="max-w-6xl mx-auto mt-20">
       <div class="text-center mb-10">
-        <p class="text-xs tracking-[0.4em] uppercase text-[#BFA76A] mb-3">Portfolio</p>
+        <p class="text-xs tracking-[0.4em] uppercase text-[#BFA76A] mb-3">{{ t('portfolioPage.liveDemo.eyebrow') }}</p>
         <h2 class="text-2xl md:text-3xl font-extrabold tracking-wide">
           <span class="bg-gradient-to-r from-[#BFA76A] via-[#E3D3A3] to-[#A58A4A] bg-clip-text text-transparent">
-            作品展示
+            {{ t('portfolioPage.liveDemo.title') }}
           </span>
         </h2>
         <p class="text-gray-400 text-sm mt-3 max-w-xl mx-auto leading-relaxed">
-          各產業完整前端 Demo，點擊即可體驗實際操作感受
+          {{ t('portfolioPage.liveDemo.subtitle') }}
         </p>
       </div>
 
@@ -280,12 +280,10 @@
             </div>
           </div>
           <div class="p-4">
-            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Restaurant</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">日式懷石料理</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">暗色系高端日式風格，含菜單、Gallery、線上訂位</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
-              查看 Demo →
-            </span>
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">{{ t('portfolioPage.liveDemo.restaurant.category') }}</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.restaurant.title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolioPage.liveDemo.restaurant.desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.cta') }}</span>
           </div>
         </router-link>
 
@@ -302,12 +300,10 @@
             </div>
           </div>
           <div class="p-4">
-            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Beauty Salon</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">美甲美容沙龍</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">高冷奶油歐系風格，含服務價目、作品集、線上預約</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
-              查看 Demo →
-            </span>
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">{{ t('portfolioPage.liveDemo.nail.category') }}</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.nail.title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolioPage.liveDemo.nail.desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.cta') }}</span>
           </div>
         </router-link>
 
@@ -324,12 +320,10 @@
             </div>
           </div>
           <div class="p-4">
-            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Fitness</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">健身教練個人品牌</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">深色強對比橘紅系，含方案定價、學員見證、預約諮詢</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
-              查看 Demo →
-            </span>
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">{{ t('portfolioPage.liveDemo.fitness.category') }}</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.fitness.title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolioPage.liveDemo.fitness.desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.cta') }}</span>
           </div>
         </router-link>
 
@@ -346,12 +340,10 @@
             </div>
           </div>
           <div class="p-4">
-            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">Café</span>
-            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">咖啡廳品牌官網</h3>
-            <p class="text-gray-500 text-xs leading-relaxed mb-3">溫暖奶油焦糖系，含菜單、甜點展示、品牌故事</p>
-            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">
-              查看 Demo →
-            </span>
+            <span class="text-[9px] tracking-widest uppercase text-[#BFA76A]">{{ t('portfolioPage.liveDemo.cafe.category') }}</span>
+            <h3 class="text-white font-bold text-sm mt-1 mb-1.5 group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.cafe.title') }}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ t('portfolioPage.liveDemo.cafe.desc') }}</p>
+            <span class="text-[#BFA76A] text-xs font-medium group-hover:text-[#E3D3A3] transition-colors">{{ t('portfolioPage.liveDemo.cta') }}</span>
           </div>
         </router-link>
 

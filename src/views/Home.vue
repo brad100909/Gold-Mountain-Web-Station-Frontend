@@ -341,6 +341,7 @@
       </div>
     </section>
 
+
     <!-- ===== AI Section ===== -->
     <section class="py-20 px-6">
       <div class="max-w-5xl mx-auto">
@@ -357,17 +358,6 @@
             <h3 class="text-[#E3D3A3] font-bold text-sm mb-3">{{ item.title }}</h3>
             <p class="text-white/75 text-xs leading-relaxed">{{ item.desc }}</p>
           </div>
-        </div>
-
-        <div class="observe-item opacity-0 text-center">
-          <p class="text-white/35 text-xs mb-5">{{ t('aiSection.note') }}</p>
-          <a href="#contact"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-[#BFA76A] hover:text-[#E3D3A3] transition-colors group">
-            {{ t('aiSection.cta') }}
-            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
         </div>
       </div>
     </section>

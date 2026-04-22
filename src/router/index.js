@@ -3,62 +3,62 @@ import LangWrapper from '../components/LangWrapper.vue'
 const seoData = {
   home: {
     zh: {
-      title: 'Golden Mountain 金山網頁設計 | 客製化網站、系統開發與 VPS 主機',
-      description: '專業客製化網站設計、系統開發與 VPS 主機服務。不使用套版，Vue 3 + Laravel 全端架構，為品牌打造能長期成長的網站。'
+      title: '台灣網頁設計推薦 | 客製化網站、系統開發、VPS 主機 | Golden Mountain',
+      description: '找台灣網頁設計公司？Golden Mountain 提供客製化形象網站、系統開發與 VPS 主機服務，不使用套版，讓你的網站真正帶來詢問與成交。'
     },
     en: {
-      title: 'Golden Mountain Web Design | Custom Websites, Systems & VPS Hosting',
-      description: 'Professional custom website design, system development, and VPS hosting. No templates — Vue 3 + Laravel, built for long-term growth.'
+      title: 'Taiwan Web Design | Custom Websites, System Development & VPS | Golden Mountain',
+      description: 'Looking for a web designer in Taiwan? Golden Mountain builds custom websites, systems, and VPS hosting — no templates, built to convert visitors into clients.'
     }
   },
   portfolio: {
     zh: {
-      title: '作品集 | Golden Mountain 金山網頁設計',
-      description: '查看 Golden Mountain 的示範專案：品牌形象網站、電商系統、後台管理系統，了解我們的開發能力與設計風格。'
+      title: '網頁設計作品集 | 餐廳、美甲、健身、電商實際案例 | Golden Mountain',
+      description: '查看 Golden Mountain 網頁設計實際作品：日式餐廳、美甲沙龍、健身教練、電商系統與後台管理，了解客製化網站的設計能力。'
     },
     en: {
-      title: 'Portfolio | Golden Mountain Web Design',
-      description: 'Explore Golden Mountain demo projects: brand websites, e-commerce systems, and admin dashboards showcasing our development capabilities.'
+      title: 'Web Design Portfolio | Restaurant, Beauty, Fitness & E-commerce | Golden Mountain',
+      description: 'Browse Golden Mountain web design projects: Japanese restaurant, nail salon, fitness coach, e-commerce, and admin dashboard demos.'
     }
   },
   services: {
     zh: {
-      title: '服務項目 | Golden Mountain 金山網頁設計',
-      description: '提供客製化形象網站、系統與會員功能開發、VPS 主機架設與長期維護服務。從需求訪談到上線後支援，一個窗口全程負責。'
+      title: '台灣網頁設計服務 | 客製化網站、會員系統、VPS 主機推薦 | Golden Mountain',
+      description: '台灣專業網頁設計服務：客製化形象網站、會員系統開發、VPS 主機架設與長期維護。從需求評估到上線後支援，一個窗口全程負責。'
     },
     en: {
-      title: 'Services | Golden Mountain Web Design',
-      description: 'Custom brand websites, system & membership development, VPS setup and long-term maintenance. One point of contact from discovery to post-launch support.'
+      title: 'Web Design Services in Taiwan | Custom Sites, Systems & VPS | Golden Mountain',
+      description: 'Professional web design services in Taiwan: custom brand websites, membership system development, VPS setup and long-term maintenance. Full support from day one.'
     }
   },
   pricing: {
     zh: {
-      title: '方案介紹與報價 | Golden Mountain 金山網頁設計',
-      description: '透明定價，一次付清或訂閱方案任您選擇。基礎形象網站 NT$28,000 起，系統開發、VPS 維護訂閱方案彈性配合。'
+      title: '網頁設計費用多少？台灣網站設計報價行情 | Golden Mountain',
+      description: '台灣網頁設計收費透明公開：形象網站 NT$28,000 起，含訂閱制與一次付清方案。不確定預算？免費需求評估，告訴你實際要花多少。'
     },
     en: {
-      title: 'Pricing Plans | Golden Mountain Web Design',
-      description: 'Transparent pricing — one-time or subscription. Starter websites from NT$28,000. Flexible plans for system development and VPS maintenance.'
+      title: 'Taiwan Web Design Pricing | How Much Does a Website Cost? | Golden Mountain',
+      description: 'Transparent web design pricing in Taiwan: brand websites from NT$28,000. One-time or subscription plans available. Free assessment to estimate your budget.'
     }
   },
   blog: {
     zh: {
-      title: '部落格 | Golden Mountain 金山網頁設計',
-      description: '分享網頁設計、SEO、系統開發的實用知識，幫助台灣品牌與業者做出更好的決策。'
+      title: '網頁設計知識部落格 | SEO、費用、系統開發實用指南 | Golden Mountain',
+      description: '台灣網頁設計實用知識：SEO 入門、網站費用行情、套版 vs 客製化比較，幫助業者做出更好的網站決策。'
     },
     en: {
-      title: 'Blog | Golden Mountain Web Design',
-      description: 'Practical insights on web design, SEO, and system development for Taiwanese brands and business owners.'
+      title: 'Web Design Blog | SEO, Pricing & Development Guides | Golden Mountain',
+      description: 'Practical web design guides for Taiwan businesses: SEO basics, pricing comparisons, template vs custom websites — make better decisions for your online presence.'
     }
   },
   contact: {
     zh: {
-      title: '聯絡我們 | Golden Mountain 金山網頁設計',
-      description: '有網站或系統開發需求？歡迎直接聯絡 Golden Mountain，免費需求評估，1-2 個工作天內回覆。'
+      title: '免費網頁設計諮詢 | 聯絡 Golden Mountain 金山網頁設計',
+      description: '有網站或系統開發需求？免費需求評估，告訴你實際方向與費用，1-2 個工作天內回覆，不強迫推銷。'
     },
     en: {
-      title: 'Contact Us | Golden Mountain Web Design',
-      description: 'Have a project in mind? Contact Golden Mountain for a free consultation. I typically reply within 1–2 business days.'
+      title: 'Free Web Design Consultation | Contact Golden Mountain',
+      description: 'Have a website or system project in mind? Get a free assessment — honest advice on direction and budget. Reply within 1–2 business days, no pressure.'
     }
   }
 }

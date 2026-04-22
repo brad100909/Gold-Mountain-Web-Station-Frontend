@@ -296,7 +296,17 @@
       "desc": "Member data management, role-based access, activity logs, and analytics charts — built with scalability and long-term maintainability in mind.",
       "cta": "View Demo"
     },
-    "backHome": "Back to Home"
+    "backHome": "Back to Home",
+    "liveDemo": {
+      "eyebrow": "Portfolio",
+      "title": "Demo Projects",
+      "subtitle": "Full front-end demos across different industries — click to experience the real interaction",
+      "cta": "View Demo →",
+      "restaurant": { "category": "Restaurant", "title": "Japanese Kaiseki Dining", "desc": "Dark high-end Japanese style with menu, gallery, and online reservation" },
+      "nail": { "category": "Beauty Salon", "title": "Nail & Beauty Studio", "desc": "Cool cream European style with service menu, portfolio, and online booking" },
+      "fitness": { "category": "Fitness", "title": "Personal Training Brand", "desc": "Dark high-contrast orange-red with pricing, testimonials, and consultation booking" },
+      "cafe": { "category": "Café", "title": "Café Brand Website", "desc": "Warm cream caramel style with menu, dessert showcase, and brand story" }
+    }
   },
 
   "pricingPage": {

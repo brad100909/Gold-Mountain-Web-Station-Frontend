@@ -69,19 +69,33 @@ const { locale } = useI18n()
 const post = computed(() => posts.find(p => p.slug === route.params.slug))
 const content = computed(() => post.value ? post.value[locale.value] || post.value.zh : null)
 
+const BASE = 'https://goldenmountaindesign.com'
+
 useHead(computed(() => {
   if (!content.value) return {}
+  const lang = route.params.lang || 'zh'
+  const slug = route.params.slug
   const siteName = 'Golden Mountain 金山網頁設計'
   const title = `${content.value.title} | ${siteName}`
   const description = content.value.description
+  const canonical = `${BASE}/${lang}/blog/${slug}`
+  const altLang = lang === 'zh' ? 'en' : 'zh'
+
   return {
     title,
     meta: [
       { name: 'description', content: description },
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
+      { property: 'og:url', content: canonical },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
+    ],
+    link: [
+      { rel: 'canonical', href: canonical },
+      { rel: 'alternate', hreflang: lang === 'zh' ? 'zh-TW' : 'en', href: canonical },
+      { rel: 'alternate', hreflang: lang === 'zh' ? 'en' : 'zh-TW', href: `${BASE}/${altLang}/blog/${slug}` },
+      { rel: 'alternate', hreflang: 'x-default', href: `${BASE}/zh/blog/${slug}` },
     ]
   }
 }))
