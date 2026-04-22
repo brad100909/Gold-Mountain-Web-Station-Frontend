@@ -60,6 +60,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { useHead } from '@unhead/vue'
 import { posts } from '../data/blog.js'
 
 const route = useRoute()
@@ -67,6 +68,23 @@ const { locale } = useI18n()
 
 const post = computed(() => posts.find(p => p.slug === route.params.slug))
 const content = computed(() => post.value ? post.value[locale.value] || post.value.zh : null)
+
+useHead(computed(() => {
+  if (!content.value) return {}
+  const siteName = 'Golden Mountain 金山網頁設計'
+  const title = `${content.value.title} | ${siteName}`
+  const description = content.value.description
+  return {
+    title,
+    meta: [
+      { name: 'description', content: description },
+      { property: 'og:title', content: title },
+      { property: 'og:description', content: description },
+      { name: 'twitter:title', content: title },
+      { name: 'twitter:description', content: description },
+    ]
+  }
+}))
 
 const renderedContent = computed(() => {
   if (!content.value) return ''

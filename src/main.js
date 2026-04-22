@@ -1,19 +1,30 @@
-import { createApp } from 'vue'
+import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
-
 import { createPinia } from 'pinia'
-import router from './router'
-
+import { routes } from './router'
 import './assets/main.css'
-
 import i18n from './i18n'
-import { createGtag } from 'vue-gtag'
 
-const app = createApp(App)
+export const createApp = ViteSSG(
+  App,
+  { routes, base: '/' },
+  ({ app, router, isClient }) => {
+    app.use(createPinia())
+    app.use(i18n)
 
-app.use(createPinia())
-app.use(router)
-app.use(i18n)
-app.use(createGtag({ tagId: 'G-R7C65VEN92' }), router)
+    router.beforeEach((to, from, next) => {
+      const lang = to.params.lang
+      if (!['zh', 'en'].includes(lang)) {
+        return next('/zh')
+      }
+      i18n.global.locale.value = lang
+      next()
+    })
 
-app.mount('#app')
+if (isClient) {
+      import('vue-gtag').then(({ createGtag }) => {
+        app.use(createGtag({ tagId: 'G-R7C65VEN92' }), router)
+      })
+    }
+  }
+)

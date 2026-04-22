@@ -1,6 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
 import LangWrapper from '../components/LangWrapper.vue'
-import i18n from '../i18n'
 
 const seoData = {
   home: {
@@ -119,25 +117,4 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes
-})
-
-// 語言控制 + SEO meta 更新
-router.beforeEach((to, from, next) => {
-  const lang = to.params.lang
-  if (!['zh', 'en'].includes(lang)) {
-    return next('/zh') // 沒語言就導回中文
-  }
-  i18n.global.locale.value = lang
-  next()
-})
-
-router.afterEach((to) => {
-  const lang = to.params.lang || 'zh'
-  const name = to.name
-  updateSeoMeta(name, lang)
-})
-
-export default router
+export { routes, seoData, updateSeoMeta }
