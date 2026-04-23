@@ -80,16 +80,16 @@
   },
 
   "stats": {
-    "label": "Real Projects",
-    "s1Value": "20+",
-    "s1Label": "Projects Completed",
-    "s2Value": "5+",
+    "label": "About Us",
+    "s1Value": "4",
+    "s1Label": "Industry Demos",
+    "s2Value": "2+",
     "s2Label": "Years of Experience",
-    "s3Value": "10+",
-    "s3Label": "Sites Maintained",
+    "s3Value": "100%",
+    "s3Label": "Custom, No Templates",
     "s4Value": "1–2",
     "s4Label": "Business Day Reply",
-    "note": "Numbers as of today, and growing"
+    "note": "Every project starts from your needs — no templates used"
   },
 
   "aiSection": {

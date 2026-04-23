@@ -80,16 +80,16 @@
   },
 
   "stats": {
-    "label": "實際案例",
-    "s1Value": "20+",
-    "s1Label": "完成專案",
-    "s2Value": "5+",
+    "label": "關於我們",
+    "s1Value": "4",
+    "s1Label": "產業 Demo 作品",
+    "s2Value": "2+",
     "s2Label": "年開發經驗",
-    "s3Value": "10+",
-    "s3Label": "維護中網站",
+    "s3Value": "100%",
+    "s3Label": "客製化，不套版",
     "s4Value": "1–2",
     "s4Label": "工作天內回覆",
-    "note": "以上為現況數字，持續增加中"
+    "note": "每個專案都從需求出發，不使用現成模板"
   },
 
   "aiSection": {
