@@ -126,7 +126,7 @@
           <div v-if="plan.aiTag" class="mb-5">
             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-semibold tracking-wide
                          bg-[#BFA76A]/15 border border-[#BFA76A]/40 text-[#E3D3A3]">
-              🤖 {{ plan.aiTag }}
+              {{ plan.aiTag }}
             </span>
           </div>
 
@@ -376,7 +376,7 @@ const onetimePlans = computed(() => [
     icon: '🌱',
     name: t('pricingPage.ot1.name'),
     desc: t('pricingPage.ot1.desc'),
-    price: '28,000+',
+    price: '7,000+',
     highlight: false,
     cta: t('pricingPage.ctaOt1'),
     features: [
@@ -392,7 +392,7 @@ const onetimePlans = computed(() => [
     icon: '📅',
     name: t('pricingPage.ot2.name'),
     desc: t('pricingPage.ot2.desc'),
-    price: '45,000+',
+    price: '15,000+',
     highlight: true,
     cta: t('pricingPage.ctaOt2'),
     aiTag: t('pricingPage.ot2.aiTag'),
@@ -409,7 +409,7 @@ const onetimePlans = computed(() => [
     icon: '🏢',
     name: t('pricingPage.ot3.name'),
     desc: t('pricingPage.ot3.desc'),
-    price: '68,000+',
+    price: '25,000+',
     highlight: false,
     cta: t('pricingPage.ctaOt3'),
     aiTag: t('pricingPage.ot3.aiTag'),
@@ -427,7 +427,7 @@ const onetimePlans = computed(() => [
     icon: '⚙️',
     name: t('pricingPage.ot4.name'),
     desc: t('pricingPage.ot4.desc'),
-    price: '120,000+',
+    price: '面議',
     highlight: false,
     cta: t('pricingPage.ctaOt4'),
     aiTag: t('pricingPage.ot4.aiTag'),
@@ -448,8 +448,8 @@ const subscriptionPlans = computed(() => [
     icon: '🛡️',
     name: t('pricingPage.sub1.name'),
     desc: t('pricingPage.sub1.desc'),
-    price: '2,500',
-    priceAnnual: '25,000',
+    price: '1,000',
+    priceAnnual: '10,000',
     highlight: false,
     features: [
       t('pricingPage.sub1.f1'),
@@ -463,8 +463,8 @@ const subscriptionPlans = computed(() => [
     icon: '🚀',
     name: t('pricingPage.sub2.name'),
     desc: t('pricingPage.sub2.desc'),
-    price: '4,500',
-    priceAnnual: '45,000',
+    price: '2,000',
+    priceAnnual: '20,000',
     highlight: true,
     features: [
       t('pricingPage.sub2.f1'),
@@ -479,8 +479,8 @@ const subscriptionPlans = computed(() => [
     icon: '👑',
     name: t('pricingPage.sub3.name'),
     desc: t('pricingPage.sub3.desc'),
-    price: '8,000',
-    priceAnnual: '80,000',
+    price: '3,500',
+    priceAnnual: '35,000',
     highlight: false,
     features: [
       t('pricingPage.sub3.f1'),

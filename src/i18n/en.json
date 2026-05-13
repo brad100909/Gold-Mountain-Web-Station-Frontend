@@ -311,7 +311,7 @@
 
   "pricingPage": {
     "eyebrow": "Golden Mountain Pricing",
-    "title": "Is your website actually bringing in clients?",
+    "title": "Let Your Website Work for You — Automated Inquiries, Bookings, and More",
     "subtitle": "Traffic, decent design, but still not enough inquiries — the problem usually isn't how it looks, it's conversion. Every plan below is built with that in mind.",
     "tabOnetime": "One-Time",
     "tabSubscription": "Subscription",
@@ -412,45 +412,45 @@
     },
 
     "sub1": {
-      "name": "Maintenance",
-      "desc": "Keep your site online and problems handled — without touching a thing",
-      "f1": "24/7 server monitoring — issues caught and fixed before you notice",
-      "f2": "SSL auto-renewal, so your site never shows \"Not Secure\" to visitors",
-      "f3": "Daily backups — restore your site to any point if anything goes wrong",
-      "f4": "Monthly report so you always know your site is in good hands",
-      "note": "Best for: Business owners who want zero technical headaches"
+      "name": "Basic Plan",
+      "desc": "No upfront cost — get a professional website and pay monthly",
+      "f1": "Custom website (up to 5 pages)",
+      "f2": "Hosting, SSL, and daily backups included",
+      "f3": "Unlimited text and image content updates",
+      "f4": "Monthly maintenance report",
+      "note": "Minimum 6-month contract, then cancel anytime with 1 month's notice"
     },
     "sub2": {
-      "name": "Growth",
-      "desc": "Maintenance + monthly updates and improvements",
-      "f1": "Everything in Maintenance",
-      "f2": "3 hours/month for feature tweaks or content updates",
-      "f3": "Performance optimization and speed tuning",
+      "name": "Booking System Plan",
+      "desc": "No upfront cost — let clients book themselves and stop chasing appointments",
+      "f1": "Everything in Basic Plan",
+      "f2": "Online booking system, accept appointments 24/7",
+      "f3": "Auto confirmation + day-before reminder",
       "f4": "Priority response (within 24 hours)",
       "f5": "Quarterly SEO health report",
-      "note": "Best for: Clients who want continuous improvement without managing it themselves"
+      "note": "Minimum 6-month contract. Best for nail studios, salons, fitness trainers, clinics"
     },
     "sub3": {
-      "name": "Full Partner",
-      "desc": "Complete technical partnership, zero hassle",
-      "f1": "Everything in Growth",
-      "f2": "8 dev hours/month (unused hours carry over, up to 24 hrs max; no cash refund)",
-      "f3": "Feature planning and technical consulting",
-      "f4": "Emergency priority scheduling",
-      "f5": "Monthly technical consultation",
-      "f6": "Annual architecture health check",
-      "note": "Best for: Growing businesses that want to fully outsource their technical operations"
+      "name": "Business Plan",
+      "desc": "No upfront cost — full business website with AI support, working for you around the clock",
+      "f1": "Everything in Booking System Plan",
+      "f2": "Multi-page business website (no page limit)",
+      "f3": "AI chat integration — auto-reply to inquiries 24/7",
+      "f4": "Full SEO setup and Google Analytics",
+      "f5": "Bilingual support (Chinese / English)",
+      "f6": "Monthly consultation and feature updates",
+      "note": "Minimum 6-month contract. Best for SMBs that need a complete online presence"
     },
 
     "faqTitle": "Frequently Asked Questions",
-    "faq1q": "Are the prices fixed?",
-    "faq1a": "The prices shown are base estimates. Final pricing depends on feature complexity, number of pages, and integrations required. For system development, please reach out first so I can provide an accurate quote.",
-    "faq2q": "Can I cancel my subscription anytime?",
-    "faq2a": "Yes. There is no minimum contract period. Just give one month's notice and I'll cancel it. Unused dev hours are settled within the current month and do not carry over.",
+    "faq1q": "Is there really no upfront cost for subscription plans?",
+    "faq1a": "Correct. Subscription plans require no deposit. We start building your site right after signing, and you pay a fixed monthly fee.",
+    "faq2q": "Can I cancel after the minimum contract?",
+    "faq2a": "Yes. After the 6-month minimum, the plan converts to month-to-month. Give one month's notice anytime to cancel.",
     "faq3q": "Does the one-time plan include hosting?",
-    "faq3a": "No, hosting is billed separately. When self-managed, the real cost typically runs NT$1,000–3,000/month once you factor in domain, backups, monitoring, and the occasional emergency fix. With our maintenance plan, everything is handled under one roof — no logins, no settings, no stress.",
-    "faq4q": "Can I add a subscription plan after my site launches?",
-    "faq4a": "Absolutely. Many clients complete a one-time website build first, then add a subscription plan once the site is stable. Both options are fully independent."
+    "faq3a": "No, hosting is billed separately at around NT$1,000/month (includes server, SSL, and daily backups). Alternatively, subscription plans bundle everything together so you never have to manage technical settings yourself.",
+    "faq4q": "Who owns the website?",
+    "faq4a": "During the subscription period, the site is hosted and managed by Golden Mountain. If you ever cancel, we can transfer the source code to you or convert to a one-time plan to give you full ownership."
   },
 
   "contactPage": {

@@ -7,6 +7,7 @@
     <loc>https://goldenmountaindesign.com/zh</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,6 +15,7 @@
     <loc>https://goldenmountaindesign.com/en</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,11 +23,17 @@
   <!-- 作品集 -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/portfolio"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/portfolio"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -33,11 +41,17 @@
   <!-- 服務 -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/services</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/services"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/services"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -45,11 +59,17 @@
   <!-- 方案 -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/pricing"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/pricing"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -57,11 +77,17 @@
   <!-- 聯絡 -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/contact</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -69,155 +95,297 @@
   <!-- 部落格列表 -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- 部落格文章 -->
+  <!-- 部落格文章：template-vs-custom-website -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/template-vs-custom-website</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/template-vs-custom-website"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/template-vs-custom-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/template-vs-custom-website"/>
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/template-vs-custom-website</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/template-vs-custom-website"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/template-vs-custom-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/template-vs-custom-website"/>
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：why-nail-salons-need-online-booking -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/why-nail-salons-need-online-booking</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/why-nail-salons-need-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/why-nail-salons-need-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/why-nail-salons-need-online-booking"/>
     <lastmod>2025-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/why-nail-salons-need-online-booking</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/why-nail-salons-need-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/why-nail-salons-need-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/why-nail-salons-need-online-booking"/>
     <lastmod>2025-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：restaurant-cafe-why-need-own-website -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/restaurant-cafe-why-need-own-website</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/restaurant-cafe-why-need-own-website"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/restaurant-cafe-why-need-own-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/restaurant-cafe-why-need-own-website"/>
     <lastmod>2025-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/restaurant-cafe-why-need-own-website</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/restaurant-cafe-why-need-own-website"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/restaurant-cafe-why-need-own-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/restaurant-cafe-why-need-own-website"/>
     <lastmod>2025-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：fitness-coach-get-more-clients-with-website -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/fitness-coach-get-more-clients-with-website</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/fitness-coach-get-more-clients-with-website"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/fitness-coach-get-more-clients-with-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/fitness-coach-get-more-clients-with-website"/>
     <lastmod>2025-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/fitness-coach-get-more-clients-with-website</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/fitness-coach-get-more-clients-with-website"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/fitness-coach-get-more-clients-with-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/fitness-coach-get-more-clients-with-website"/>
     <lastmod>2025-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：clinic-beauty-online-booking -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/clinic-beauty-online-booking</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/clinic-beauty-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/clinic-beauty-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/clinic-beauty-online-booking"/>
     <lastmod>2025-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/clinic-beauty-online-booking</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/clinic-beauty-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/clinic-beauty-online-booking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/clinic-beauty-online-booking"/>
     <lastmod>2025-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：what-is-seo-why-your-website-is-invisible -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/what-is-seo-why-your-website-is-invisible</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/what-is-seo-why-your-website-is-invisible"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/what-is-seo-why-your-website-is-invisible"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/what-is-seo-why-your-website-is-invisible"/>
     <lastmod>2025-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/what-is-seo-why-your-website-is-invisible</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/what-is-seo-why-your-website-is-invisible"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/what-is-seo-why-your-website-is-invisible"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/what-is-seo-why-your-website-is-invisible"/>
     <lastmod>2025-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：website-speed-matters -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/website-speed-matters</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/website-speed-matters"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/website-speed-matters"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/website-speed-matters"/>
     <lastmod>2025-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/website-speed-matters</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/website-speed-matters"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/website-speed-matters"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/website-speed-matters"/>
     <lastmod>2025-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：why-your-website-needs-ssl-https -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/why-your-website-needs-ssl-https</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/why-your-website-needs-ssl-https"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/why-your-website-needs-ssl-https"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/why-your-website-needs-ssl-https"/>
     <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/why-your-website-needs-ssl-https</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/why-your-website-needs-ssl-https"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/why-your-website-needs-ssl-https"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/why-your-website-needs-ssl-https"/>
     <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：diy-vs-hire-developer -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/diy-vs-hire-developer</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/diy-vs-hire-developer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/diy-vs-hire-developer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/diy-vs-hire-developer"/>
     <lastmod>2025-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/diy-vs-hire-developer</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/diy-vs-hire-developer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/diy-vs-hire-developer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/diy-vs-hire-developer"/>
     <lastmod>2025-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：taiwan-web-design-pricing-guide -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/taiwan-web-design-pricing-guide</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/taiwan-web-design-pricing-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/taiwan-web-design-pricing-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/taiwan-web-design-pricing-guide"/>
     <lastmod>2025-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/taiwan-web-design-pricing-guide</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/taiwan-web-design-pricing-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/taiwan-web-design-pricing-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/taiwan-web-design-pricing-guide"/>
     <lastmod>2025-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- 部落格文章：questions-to-ask-before-hiring-web-designer -->
   <url>
     <loc>https://goldenmountaindesign.com/zh/blog/questions-to-ask-before-hiring-web-designer</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/questions-to-ask-before-hiring-web-designer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/questions-to-ask-before-hiring-web-designer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/questions-to-ask-before-hiring-web-designer"/>
     <lastmod>2025-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goldenmountaindesign.com/en/blog/questions-to-ask-before-hiring-web-designer</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/questions-to-ask-before-hiring-web-designer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/questions-to-ask-before-hiring-web-designer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/questions-to-ask-before-hiring-web-designer"/>
     <lastmod>2025-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 部落格文章：ai-automate-business-reduce-stress -->
+  <url>
+    <loc>https://goldenmountaindesign.com/zh/blog/ai-automate-business-reduce-stress</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/ai-automate-business-reduce-stress"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/ai-automate-business-reduce-stress"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/ai-automate-business-reduce-stress"/>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenmountaindesign.com/en/blog/ai-automate-business-reduce-stress</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/ai-automate-business-reduce-stress"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/ai-automate-business-reduce-stress"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/ai-automate-business-reduce-stress"/>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 部落格文章：ai-customer-service-never-sleeps -->
+  <url>
+    <loc>https://goldenmountaindesign.com/zh/blog/ai-customer-service-never-sleeps</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/ai-customer-service-never-sleeps"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/ai-customer-service-never-sleeps"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/ai-customer-service-never-sleeps"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenmountaindesign.com/en/blog/ai-customer-service-never-sleeps</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/ai-customer-service-never-sleeps"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/ai-customer-service-never-sleeps"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/ai-customer-service-never-sleeps"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 部落格文章：ai-document-generation-save-2-hours -->
+  <url>
+    <loc>https://goldenmountaindesign.com/zh/blog/ai-document-generation-save-2-hours</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/ai-document-generation-save-2-hours"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/ai-document-generation-save-2-hours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/ai-document-generation-save-2-hours"/>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenmountaindesign.com/en/blog/ai-document-generation-save-2-hours</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://goldenmountaindesign.com/zh/blog/ai-document-generation-save-2-hours"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goldenmountaindesign.com/en/blog/ai-document-generation-save-2-hours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldenmountaindesign.com/zh/blog/ai-document-generation-save-2-hours"/>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
