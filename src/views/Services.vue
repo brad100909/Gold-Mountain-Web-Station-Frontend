@@ -1,8 +1,5 @@
 <template>
-  <!-- 背景影片 -->
-  <video autoplay loop muted playsinline class="bg-video">
-    <source src="/bc_video.mp4" type="video/mp4" />
-  </video>
+  <BgVideo />
 
   <!-- 影片遮罩，讓文字更清晰 -->
   <div class="fixed inset-0 bg-black/50 z-0 pointer-events-none"></div>
@@ -124,6 +121,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import BgVideo from '../components/BgVideo.vue'
 import { useRoute } from 'vue-router'
 
 const { t, locale } = useI18n()
@@ -179,15 +177,3 @@ const processSteps = computed(() => [
 ])
 </script>
 
-<style scoped>
-.bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -10;
-  pointer-events: none;
-}
-</style>

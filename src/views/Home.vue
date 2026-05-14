@@ -1,9 +1,5 @@
 <template>
-  <!-- 背景影片 -->
-  <video autoplay loop muted playsinline class="bg-video">
-    <source src="/bc_video.mp4" type="video/mp4" />
-    {{ t('video.notSupported') }}
-  </video>
+  <BgVideo />
 
   <!-- 全頁暗化遮罩 -->
   <div class="fixed inset-0 bg-black/15 z-0 pointer-events-none"></div>
@@ -451,6 +447,7 @@
 import { onMounted, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import ContactForm from '../components/ContactForm.vue'
+import BgVideo from '../components/BgVideo.vue'
 
 const { t, locale } = useI18n()
 
@@ -490,17 +487,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -10;
-  pointer-events: none;
-}
-
 /* Scroll indicator */
 .scroll-dot-wrapper {
   width: 20px;

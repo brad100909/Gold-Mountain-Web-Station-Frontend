@@ -1,8 +1,5 @@
 <template>
-  <!-- 背景影片 -->
-  <video autoplay loop muted playsinline class="bg-video">
-    <source src="/bc_video.mp4" type="video/mp4" />
-  </video>
+  <BgVideo />
 
   <div class="min-h-screen relative z-10">
     <!-- Hero -->
@@ -28,19 +25,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import ContactForm from '../components/ContactForm.vue'
+import BgVideo from '../components/BgVideo.vue'
 
 const { t } = useI18n()
 </script>
 
-<style scoped>
-.bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -10;
-  pointer-events: none;
-}
-</style>
