@@ -7,7 +7,7 @@
       <!-- Left: Brand Info -->
       <div class="lg:col-span-2 flex flex-col gap-6">
         <div class="flex items-center gap-3">
-          <img src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp" alt="Golden Mountain Logo" class="h-9 w-auto" />
+          <img src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.jpg" alt="Golden Mountain Logo" class="h-9 w-auto" width="36" height="36" />
           <span class="text-lg font-bold text-white tracking-wide">Golden Mountain</span>
         </div>
 

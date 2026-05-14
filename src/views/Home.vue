@@ -18,7 +18,7 @@
 
         <!-- Brand badge -->
         <div class="observe-item opacity-0 inline-flex items-center gap-2 mb-8 px-5 py-2 rounded-full border border-[#BFA76A]/40 bg-black/25 backdrop-blur-sm">
-          <img src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp" alt="Golden Mountain Logo" class="w-5 h-5" />
+          <img src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.jpg" alt="Golden Mountain Logo" class="w-5 h-5" />
           <span class="text-sm font-medium tracking-[0.2em] text-[#E3D3A3]">
             {{ t('hero.brandName') }}
           </span>

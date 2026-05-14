@@ -5,7 +5,7 @@
       <!-- Logo -->
       <div class="flex items-center gap-3">
         <img
-          src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp"
+          src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.jpg"
           alt="Golden Mountain Logo"
           class="h-12 w-auto cursor-zoom-in hover:opacity-80 transition-opacity"
           width="48" height="48"
@@ -25,7 +25,7 @@
         >
           <div class="relative" @click.stop>
             <img
-              src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp"
+              src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.jpg"
               alt="Golden Mountain Logo"
               class="max-w-[80vw] max-h-[80vh] w-auto h-auto rounded-2xl shadow-2xl"
             />
