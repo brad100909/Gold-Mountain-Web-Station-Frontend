@@ -273,7 +273,7 @@ const gallery = [
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/japanese_restaurant_demo/restaurant-hero.jpg');
+  background-image: url('/japanese_restaurant_demo/restaurant-hero.webp');
   background-size: cover;
   background-position: center;
 }

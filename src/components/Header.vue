@@ -8,6 +8,7 @@
           src="/_minimalist_geometric_mountain_Nano_Banana_2_54908.webp"
           alt="Golden Mountain Logo"
           class="h-12 w-auto cursor-zoom-in hover:opacity-80 transition-opacity"
+          width="48" height="48"
           @click="logoModalOpen = true"
         />
         <router-link :to="'/' + locale" class="hover:opacity-80 transition-opacity">

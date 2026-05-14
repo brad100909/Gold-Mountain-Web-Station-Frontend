@@ -314,7 +314,7 @@
     "title": "Let Your Website Work for You — Automated Inquiries, Bookings, and More",
     "subtitle": "Traffic, decent design, but still not enough inquiries — the problem usually isn't how it looks, it's conversion. Every plan below is built with that in mind.",
     "tabOnetime": "One-Time",
-    "tabSubscription": "Subscription",
+    "tabSubscription": "Maintenance",
     "popular": "Most Popular",
     "oneTimePayment": "One-time fee, maintenance not included",
     "cancelAnytime": "Cancel anytime, no lock-in",
@@ -376,7 +376,7 @@
       "note": "Best for: Those who need a clean, professional online presence to get started"
     },
     "ot2": {
-      "name": "Smart Booking Website",
+      "name": "Smart Booking",
       "desc": "Tired of spending hours on LINE scheduling? Let clients book themselves — automatically.",
       "aiTag": "AI add-on: auto-reply to booking inquiries and handle scheduling — clients don't need to wait for you to be online",
       "f1": "24/7 online booking — no more waiting to reply to messages",
@@ -387,20 +387,20 @@
       "note": "Best for: Nail salons, beauty studios, fitness coaches, clinics, and time-slot-based services"
     },
     "ot3": {
-      "name": "Business Website",
-      "desc": "For SMEs, service providers, and brand websites",
-      "aiTag": "AI add-on: auto-reply to inquiries, classify leads by intent, and follow up with prospects who didn't respond",
-      "f1": "Multi-page website (no page limit)",
-      "f2": "Responsive design + scroll animations",
-      "f3": "Contact form, AI chat integration",
-      "f4": "Full SEO optimization + GA tracking",
-      "f5": "Bilingual support (ZH / EN)",
+      "name": "E-commerce",
+      "desc": "Payment gateway, AI product SEO, full order dashboard — delivered in 7–10 days",
+      "aiTag": "AI add-on: AI product SEO, automated order notifications, lead follow-up",
+      "f1": "Payment gateway integration (Newebpay / ECPay)",
+      "f2": "AI product SEO optimization",
+      "f3": "Full order management dashboard",
+      "f4": "Responsive design + scroll animations",
+      "f5": "Full SEO setup + GA tracking",
       "f6": "60-day free revisions after launch",
-      "note": "Best for: Businesses that need a complete brand presence built for long-term growth"
+      "note": "Best for: Businesses selling products or services online"
     },
     "ot4": {
-      "name": "System / E-commerce",
-      "desc": "For businesses needing admin, membership, or payment flows",
+      "name": "Custom Development",
+      "desc": "Deep business logic, API integrations, and AI interface design",
       "aiTag": "AI add-on: automate order notifications, client classification, and business document generation — eliminate repetitive manual work entirely",
       "f1": "Full-stack development (Vue 3 + Laravel)",
       "f2": "Membership system and order flow design",
@@ -412,45 +412,42 @@
     },
 
     "sub1": {
-      "name": "Basic Plan",
-      "desc": "No upfront cost — get a professional website and pay monthly",
-      "f1": "Custom website (up to 5 pages)",
-      "f2": "Hosting, SSL, and daily backups included",
-      "f3": "Unlimited text and image content updates",
-      "f4": "Monthly maintenance report",
-      "note": "Minimum 6-month contract, then cancel anytime with 1 month's notice"
+      "name": "Basic Maintenance",
+      "desc": "Essential technical upkeep after launch — no technical worries on your end",
+      "f1": "System security updates",
+      "f2": "SSL monitoring",
+      "f3": "Monthly data backup",
+      "f4": "Minor text and image edits",
+      "note": "Self-hosted: client provides account access. Or add NT$300–500/month for managed hosting"
     },
     "sub2": {
-      "name": "Booking System Plan",
-      "desc": "No upfront cost — let clients book themselves and stop chasing appointments",
-      "f1": "Everything in Basic Plan",
-      "f2": "Online booking system, accept appointments 24/7",
-      "f3": "Auto confirmation + day-before reminder",
-      "f4": "Priority response (within 24 hours)",
-      "f5": "Quarterly SEO health report",
-      "note": "Minimum 6-month contract. Best for nail studios, salons, fitness trainers, clinics"
+      "name": "Business Operations",
+      "desc": "Professional maintenance for booking systems — keeping your scheduling flow stable",
+      "f1": "Booking logic maintenance",
+      "f2": "Database performance optimization",
+      "f3": "Regular security scans",
+      "f4": "Monthly analytics report",
+      "note": "Mid-tier hosting: engineer-managed VPS recommended to ensure booking system reliability"
     },
     "sub3": {
-      "name": "Business Plan",
-      "desc": "No upfront cost — full business website with AI support, working for you around the clock",
-      "f1": "Everything in Booking System Plan",
-      "f2": "Multi-page business website (no page limit)",
-      "f3": "AI chat integration — auto-reply to inquiries 24/7",
-      "f4": "Full SEO setup and Google Analytics",
-      "f5": "Bilingual support (Chinese / English)",
-      "f6": "Monthly consultation and feature updates",
-      "note": "Minimum 6-month contract. Best for SMBs that need a complete online presence"
+      "name": "Growth Support",
+      "desc": "Full-service technical support and growth services for e-commerce and high-traffic sites",
+      "f1": "E-commerce transaction monitoring",
+      "f2": "High-intensity security hardening",
+      "f3": "Quarterly SEO keyword optimization",
+      "f4": "AI content generation",
+      "note": "High-performance hosting: includes high-bandwidth VPS to handle e-commerce traffic"
     },
 
     "faqTitle": "Frequently Asked Questions",
-    "faq1q": "Is there really no upfront cost for subscription plans?",
-    "faq1a": "Correct. Subscription plans require no deposit. We start building your site right after signing, and you pay a fixed monthly fee.",
-    "faq2q": "Can I cancel after the minimum contract?",
-    "faq2a": "Yes. After the 6-month minimum, the plan converts to month-to-month. Give one month's notice anytime to cancel.",
+    "faq1q": "What's included in the maintenance plans?",
+    "faq1a": "Depending on the plan: security updates, SSL monitoring, data backups, and minor content edits. See each plan's feature list, or feel free to ask directly.",
+    "faq2q": "How does hosting work?",
+    "faq2a": "Basic Maintenance lets you self-host (you provide account access) or add NT$300–500/month for managed hosting. Business Operations and Growth Support recommend engineer-managed VPS for stability.",
     "faq3q": "Does the one-time plan include hosting?",
-    "faq3a": "No, hosting is billed separately at around NT$1,000/month (includes server, SSL, and daily backups). Alternatively, subscription plans bundle everything together so you never have to manage technical settings yourself.",
+    "faq3a": "No, hosting is billed separately starting from around NT$300–500/month (server, SSL, backups). After launch, you can add a maintenance plan to keep everything running smoothly.",
     "faq4q": "Who owns the website?",
-    "faq4a": "During the subscription period, the site is hosted and managed by Golden Mountain. If you ever cancel, we can transfer the source code to you or convert to a one-time plan to give you full ownership."
+    "faq4a": "One-time plan: you own the code and database fully — manage or transfer it anytime. Maintenance plan: technically hosted by Golden Mountain; source code can be transferred if you ever end the plan."
   },
 
   "contactPage": {

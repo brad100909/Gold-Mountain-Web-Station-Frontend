@@ -269,7 +269,7 @@
           class="group block bg-white/8 backdrop-blur border border-white/15 rounded-2xl overflow-hidden
                  hover:border-[#BFA76A]/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
           <div class="h-36 bg-[#0d0d0d] relative overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 bg-[url('/japanese_restaurant_demo/restaurant-hero.jpg')] bg-cover bg-center opacity-50"></div>
+            <div class="absolute inset-0 bg-[url('/japanese_restaurant_demo/restaurant-hero.webp')] bg-cover bg-center opacity-50"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent"></div>
             <div class="relative text-center">
               <div class="text-3xl font-black tracking-widest"
