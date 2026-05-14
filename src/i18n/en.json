@@ -447,7 +447,19 @@
     "faq3q": "Does the one-time plan include hosting?",
     "faq3a": "No, hosting is billed separately starting from around NT$300–500/month (server, SSL, backups). After launch, you can add a maintenance plan to keep everything running smoothly.",
     "faq4q": "Who owns the website?",
-    "faq4a": "One-time plan: you own the code and database fully — manage or transfer it anytime. Maintenance plan: technically hosted by Golden Mountain; source code can be transferred if you ever end the plan."
+    "faq4a": "One-time plan: you own the code and database fully — manage or transfer it anytime. Maintenance plan: technically hosted by Golden Mountain; source code can be transferred if you ever end the plan.",
+
+    "currency": "USD",
+    "ot1Price": "230+",
+    "ot2Price": "630+",
+    "ot3Price": "1,280+",
+    "ot4Price": "Custom Quote",
+    "sub1Price": "26",
+    "sub1PriceAnnual": "260",
+    "sub2Price": "65",
+    "sub2PriceAnnual": "640",
+    "sub3Price": "160",
+    "sub3PriceAnnual": "1,600"
   },
 
   "contactPage": {

@@ -100,8 +100,13 @@
           <!-- Price -->
           <div class="mb-6">
             <div class="flex items-end gap-1">
-              <span class="text-gray-400 text-sm">NT$</span>
-              <span class="text-4xl font-extrabold text-white">{{ plan.price }}</span>
+              <template v-if="!plan.customPrice">
+                <span class="text-gray-400 text-sm">{{ t('pricingPage.currency') }}</span>
+                <span class="text-4xl font-extrabold text-white">{{ plan.price }}</span>
+              </template>
+              <template v-else>
+                <span class="text-2xl font-bold text-[#BFA76A]">{{ plan.price }}</span>
+              </template>
             </div>
             <div class="text-gray-400 text-xs mt-1">{{ t('pricingPage.oneTimePayment') }}</div>
           </div>
@@ -197,7 +202,7 @@
           <!-- Price -->
           <div class="mb-6">
             <div class="flex items-end gap-1">
-              <span class="text-gray-400 text-sm">NT$</span>
+              <span class="text-gray-400 text-sm">{{ t('pricingPage.currency') }}</span>
               <span class="text-4xl font-extrabold text-white">
                 {{ billing === 'annual' ? plan.priceAnnual : plan.price }}
               </span>
@@ -374,7 +379,7 @@ const onetimePlans = computed(() => [
     icon: '🌱',
     name: t('pricingPage.ot1.name'),
     desc: t('pricingPage.ot1.desc'),
-    price: '7,000+',
+    price: t('pricingPage.ot1Price'),
     highlight: false,
     cta: t('pricingPage.ctaOt1'),
     features: [
@@ -390,7 +395,7 @@ const onetimePlans = computed(() => [
     icon: '📅',
     name: t('pricingPage.ot2.name'),
     desc: t('pricingPage.ot2.desc'),
-    price: '20,000+',
+    price: t('pricingPage.ot2Price'),
     highlight: true,
     cta: t('pricingPage.ctaOt2'),
     aiTag: t('pricingPage.ot2.aiTag'),
@@ -407,7 +412,7 @@ const onetimePlans = computed(() => [
     icon: '🏢',
     name: t('pricingPage.ot3.name'),
     desc: t('pricingPage.ot3.desc'),
-    price: '40,000+',
+    price: t('pricingPage.ot3Price'),
     highlight: false,
     cta: t('pricingPage.ctaOt3'),
     aiTag: t('pricingPage.ot3.aiTag'),
@@ -425,7 +430,8 @@ const onetimePlans = computed(() => [
     icon: '⚙️',
     name: t('pricingPage.ot4.name'),
     desc: t('pricingPage.ot4.desc'),
-    price: '面議',
+    price: t('pricingPage.ot4Price'),
+    customPrice: true,
     highlight: false,
     cta: t('pricingPage.ctaOt4'),
     aiTag: t('pricingPage.ot4.aiTag'),
@@ -446,8 +452,8 @@ const subscriptionPlans = computed(() => [
     icon: '🛡️',
     name: t('pricingPage.sub1.name'),
     desc: t('pricingPage.sub1.desc'),
-    price: '800',
-    priceAnnual: '8,000',
+    price: t('pricingPage.sub1Price'),
+    priceAnnual: t('pricingPage.sub1PriceAnnual'),
     highlight: false,
     features: [
       t('pricingPage.sub1.f1'),
@@ -461,8 +467,8 @@ const subscriptionPlans = computed(() => [
     icon: '🚀',
     name: t('pricingPage.sub2.name'),
     desc: t('pricingPage.sub2.desc'),
-    price: '2,000',
-    priceAnnual: '20,000',
+    price: t('pricingPage.sub2Price'),
+    priceAnnual: t('pricingPage.sub2PriceAnnual'),
     highlight: true,
     features: [
       t('pricingPage.sub2.f1'),
@@ -476,8 +482,8 @@ const subscriptionPlans = computed(() => [
     icon: '👑',
     name: t('pricingPage.sub3.name'),
     desc: t('pricingPage.sub3.desc'),
-    price: '5,000',
-    priceAnnual: '50,000',
+    price: t('pricingPage.sub3Price'),
+    priceAnnual: t('pricingPage.sub3PriceAnnual'),
     highlight: false,
     features: [
       t('pricingPage.sub3.f1'),
